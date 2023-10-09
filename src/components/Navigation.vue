@@ -3,16 +3,17 @@
 	  <div class="left">
 		<div class="logo"></div>
 		<div class="name">
-		  <div class="first-name">Ajdin</div>
-		  <div class="last-name">Hukic</div>
+		  <div class="first-name" style='color: #003f5f'>Ajdin</div>
+		  <div class="last-name"  style='color: #00a8ff;'>Hukic</div>
 		</div>
 	  </div>
 	  <div class="right">
 		<div class="links" :class="{ 'active': isMenuOpen }">
-		  <a href="#">Home</a>
-		  <a href="#">About</a>
-		  <a href="#">Services</a>
-		  <a href="#">Contact</a>
+		  <a href="#">HOME</a>
+		  <a href="#">ABOUT</a>
+		  <a href="#">SERVICES</a>
+		  <a href="#">CONTACT</a>
+		  <a href="#" class="resume">Resume<i class="fas fa-download"></i></a>
 		</div>
 		<div class="hamburger-menu" @click="toggleMenu">
 		  <div class="bar"></div>
@@ -39,6 +40,16 @@ methods: {
 </script>
 
 <style scoped>
+.resume{
+	border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 10px 25px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* This ensures padding doesn't affect the element's size */
+	margin: 0 auto !important;
+}
+.resume i {
+  margin-left: 10px; /* Add margin between "Resume" and the download icon */
+}
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -51,8 +62,9 @@ methods: {
 	margin: 0 auto; 
 }
 .left {
-display: flex;
-align-items: center;
+	display: flex;
+	align-items: center;
+	margin-left: 2%;
 }
 
 .logo {
@@ -63,9 +75,12 @@ align-items: center;
 }
 
 .name {
-display: flex;
-flex-direction: column;
-font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	font-weight: 900;
+	text-align: left;
+	margin-left: 15%;
 }
 
 .right {
@@ -74,12 +89,25 @@ align-items: center;
 }
 
 .links {
-display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
-transition: transform 0.3s ease-in-out;
-transform: translateX(0);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    align-items: center; /* Vertically center the links */
+}
+
+.links a {
+    font-weight: 600;
+    display: flex; /* Allow vertical centering */
+    align-items: center; /* Vertically center the text */
+}
+.links a:hover{
+	color: #00a8ff;
+}
+.links a:hover{
+	border-color: #00a8ff;
 }
 
 .links.active {
@@ -87,10 +115,10 @@ transform: translateX(0%);
 }
 
 .links a {
-color: white;
-text-decoration: none;
-margin-right: 20px;
-font-size: 16px;
+	color: white;
+	text-decoration: none;
+	margin-right: 40px;
+	font-size: 16px;
 }
 
 .hamburger-menu {
