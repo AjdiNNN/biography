@@ -135,6 +135,9 @@ margin: 2px 0;
 }
 
 @media (max-width: 768px) {
+	.resume{
+		border: none;
+	}
 	.name {
 		font-size: 14px;
 	}
@@ -155,7 +158,7 @@ margin: 2px 0;
 	}
 
 	.links.active {
-		transform: translateX(-45%);
+		transform: translateX(-67.4%);
 	}
 	.navbar.active {
 		border-bottom-right-radius: 0px;
