@@ -51,6 +51,11 @@ methods: {
   margin-left: 10px; /* Add margin between "Resume" and the download icon */
 }
 .navbar {
+	position: fixed; /* Make the navbar fixed at the top */
+	top: 50px; /* Stick it to the top of the viewport */
+	left: 0;
+	right: 0;
+	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -146,7 +151,7 @@ margin: 2px 0;
 		flex-direction: column;
 		background-color: #585d65;
 		position: absolute;
-		top: 155px;
+		top: 70px;
 		z-index: 1;
 		transform: translateX(150%);
 		border-bottom-left-radius: 5px;
