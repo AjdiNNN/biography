@@ -3,8 +3,8 @@
 	  <div class="left">
 		<div class="logo"></div>
 		<div class="name">
-		  <div class="first-name" style='color: #003f5f'>Ajdin</div>
-		  <div class="last-name"  style='color: #00a8ff;'>Hukic</div>
+		  <div class="first-name" >Ajdin</div>
+		  <div class="last-name"  >Hukic</div>
 		</div>
 	  </div>
 	  <div class="right">
@@ -104,7 +104,10 @@ align-items: center;
 }
 
 .links a {
-    font-weight: 600;
+	line-height: 16px;
+	font-size: 12px;
+	font-weight: 800;
+	text-transform: uppercase;
     display: flex; /* Allow vertical centering */
     align-items: center; /* Vertically center the text */
 }

@@ -5,10 +5,13 @@
         <div class="left-div">
         </div>
         <div class="right-div">
-            <!-- Right content goes here -->
-            <div class="content" style="margin-top: 150px;">
-                <h1>Section 1</h1>
-                <p>This is some content for section 1.</p>
+          <div class="content" style="height: 150px;">
+            </div>
+            <div class="content">
+                <div class="ballon">
+                  <div class="name">AJDIN</div>
+                    <div class="name">HUKIĆ</div>
+                </div>
             </div>
             <div class="content">
                 <h1>Section 2</h1>
@@ -38,17 +41,35 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+.name {
+  color: #ffffff;
+  font-size: 4.5em;
+  line-height: 1.2;
+  font-weight: 800;
+}
+.ballon{
+  position: absolute;
+  width: 400px;
+  height: 349px;
+  margin-left: -175px;
+  background-color: #565656;
+  border-radius: 322px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .left-div {
-    background-image: url('./assets/leftphoto.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 50%; /* Adjust the width as needed */
-    height: 100%;
+  background-image: url('./assets/leftphoto.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50%; /* Adjust the width as needed */
+  height: 100%;
 }
 
 .right-div {
