@@ -4,7 +4,7 @@
 		<div class="logo"></div>
 		<div class="name">
 		  <div class="first-name" >Ajdin</div>
-		  <div class="last-name"  >Hukic</div>
+		  <div class="last-name"  >Hukić</div>
 		</div>
 	  </div>
 	  <div class="right">
@@ -59,7 +59,7 @@ methods: {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #585d65;
+	background-color: #178387;
 	color: white;
 	width: 90%;
 	padding: 10px 20px;
@@ -112,10 +112,10 @@ align-items: center;
     align-items: center; /* Vertically center the text */
 }
 .links a:hover{
-	color: #00a8ff;
+	color: #F19A3E;
 }
 .links a:hover{
-	border-color: #00a8ff;
+	border-color: #F19A3E;
 }
 
 .links.active {
