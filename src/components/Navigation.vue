@@ -10,7 +10,7 @@
 	  <div class="right">
 		<div class="links" :class="{ 'active': isMenuOpen }">
 		  <a href="#">HOME</a>
-		  <a href="#">ABOUT</a>
+		  <a href="#about">ABOUT</a>
 		  <a href="#">SERVICES</a>
 		  <a href="#">CONTACT</a>
 		  <a href="#" class="resume">Resume<i class="fas fa-download"></i></a>
@@ -112,10 +112,10 @@ align-items: center;
     align-items: center; /* Vertically center the text */
 }
 .links a:hover{
-	color: #F19A3E;
+	color: #68e0cf;
 }
 .links a:hover{
-	border-color: #F19A3E;
+	border-color: #68e0cf;
 }
 
 .links.active {

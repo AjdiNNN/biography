@@ -24,14 +24,14 @@
                   programming, and game design.
                 </p>
             </div>
-            <div class="content">
+            <div class="content" id="about">
                 <h1>
                   About me
                 </h1>
                 <h3 style="color: #68e0cf;">My story</h3>
                 <div style="display: flex; width: 90%;">
                   <p>
-                    Gamer from young age. Started thinkering with programming and game modifications
+                    Gamer from young age. Started tinkering with programming and game modifications
                     for various multiplayer games.
                   </p>
                   <p style="margin-left: 50px;">
@@ -51,23 +51,7 @@
                       <li><strong>RESIDENCE</strong> Zenica, BA</li>
                   </ul>
             </div>
-            <div class="content">
-                <h1>
-                  Education
-                </h1>
-                <div class="slider">
-                  <div class="item"> 
-                    <div class="date">2020-2023</div>
-                    <div class="item-name">INTERNATIONAL BURCH UNIVERSITY <p>Sarajevo, BA</p></div>
-                    <p>Bachelor of Information Technologies</p>
-                  </div>
-                  <div class="item"> 
-                    <div class="date">2016-2020</div>
-                    <div class="item-name">Prva Gimnazija <p>Zenica, BA</p></div>
-                    <p>Deparment of ICT</p>
-                  </div>
-                </div>
-            </div>
+          
             <div class="content">
                 <h1>
                   Experience
@@ -75,26 +59,71 @@
                 <div class="slider">
                   <div class="item"> 
                     <div class="date">2015-2021</div>
-                    <div class="item-name">Master Games Studio <p> Unity Game developer </p></div>
+                    <div class="item-name">Master Games Studio <a href="https://themastergames.com/"><i class="fa-solid fa-link"></i></a><p><i class="fa-solid fa-code"></i> Unity Game developer </p></div>
                     <p>Freelance</p>
                   </div>
                   <div class="item"> 
                     <div class="date">2021-</div>
-                    <div class="item-name">Black Top Games  <p> Unity Game developer </p></div>
+                    <div class="item-name">Black Top Games  <p><i class="fa-solid fa-code"></i> Unity Game developer </p></div>
                     <p>Part-time <br>Remote</p>
                   </div>
                 </div>
             </div>
             <div class="content">
-                <p style="margin-top: 30px;">
-                  Highly motivated and skilled IT
-                  specialist with a passion for
-                  programming and game development.
-                  I am looking for a challenging position
-                  to use my strong technical skills and
-                  experience in web development,
-                  programming, and game design.
-                </p>
+                <h1>
+                  Education
+                </h1>
+                <div class="slider">
+                  <div class="item"> 
+                    <div class="date">2020-2023</div>
+                    <div class="item-name">INTERNATIONAL BURCH UNIVERSITY <p> <i class="fa-solid fa-location-dot"></i> Sarajevo, BA</p></div>
+                    <p>Bachelor of Information Technologies</p>
+                  </div>
+                  <div class="item"> 
+                    <div class="date">2016-2020</div>
+                    <div class="item-name">Prva Gimnazija <p> <i class="fa-solid fa-location-dot"></i> Zenica, BA</p></div>
+                    <p>Deparment of ICT</p>
+                  </div>
+                </div>
+            </div>
+            <div class="content">
+                <h1>
+                  Languages
+                </h1>
+                <ul class="grid language">
+                      <li>
+                        <h2>English</h2>
+                        <p>Fluent in english. I started learning at age of 9. I learned english in school, by using web and by playing games. I went on international university, where lessons are on english.</p>
+                        <div class="label">100%</div>
+                        <div class="percentage-bar">
+                        <div class="filler" style="width: 100%;"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h2>Bosnian</h2>
+                        <p>My mother language is integral to my identity, and I can speak and understand other Yugoslavian languages, due to cultural diversity in Bosnia and Herzegovina.</p>
+                        <div class="label">100%</div>
+                        <div class="percentage-bar">
+                        <div class="filler" style="width: 100%;"></div>
+                      </div>
+                      </li>
+                      <li>
+                        <h2>German</h2>
+                        <p>Intermediate level. I started learning at age of 11. I learned it in primary and high school. I should have knowledge of B1-B2 level.</p>
+                        <div class="label" style="width: 60%;">60%</div>
+                        <div class="percentage-bar">
+                          <div class="filler" style="width: 60%;"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h2>Latin</h2>
+                        <p>I had latin as subject for 2 years in school. I am able to make sentences and undestand what is written.</p>
+                        <div class="label" style="width: 40%;">40%</div>
+                        <div class="percentage-bar">
+                          <div class="filler" style="width: 40%;"></div>
+                      </div>
+                      </li>
+                  </ul>
             </div>
         </div>
     </div>
@@ -209,15 +238,16 @@ h3{
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    justify-items: start;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  justify-items: start;
 }
 
 ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    grid-gap: 10px;
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  grid-gap: 10px;
 }
 li{
     font-size: 14px;
@@ -274,5 +304,28 @@ span
 .slider {
   scrollbar-width: thin;
   scrollbar-color: #0011ff transparent;
+}
+.percentage-bar {
+  max-width: 350px;
+  height: 5px;
+  background: #003f86;
+  position: relative;
+  border-radius: 10px;
+}
+
+.filler {
+  width: 0;
+  height: 100%;
+  background-color: #68e0cf; /* Change this color as needed */
+  border-radius: 10px;
+}
+
+.label {
+  width: 100%;
+  text-align: end;
+  color: #68e0cf;
+}
+.language{
+  grid-gap: 25px;
 }
 </style>
