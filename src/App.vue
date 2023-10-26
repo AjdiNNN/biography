@@ -132,73 +132,73 @@
                 </h1>
                 <ul class="gridthree language">
                       <li>
-                        <span class="programming c-sharp" style="background-image: url('/src/assets/c-sharp.png');"></span>
+                        <span class="programming c-sharp" ></span>
                         <ve-progress :progress="90" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">90%</span></ve-progress>
                         <h3>C#</h3>
                         <p>I learned using Unity. Experience with it for several years.</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"></span>
+                        <span class="programming"></span>
                         <ve-progress :progress="63" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">63%</span></ve-progress>
                         <h3>Pyhton</h3>
                         <p>I learned it and used it all over the place from hobby,high school to university. My senior design project was keylogger. It was mainly client sided pyhton app to capture user data.</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"  style="background-image: url('/src/assets/php.png');"></span>
+                        <span class="programming php"  ></span>
                         <ve-progress :progress="65" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">65%</span></ve-progress>
                         <h3>PHP</h3>
                         <p>I started thinkering with while making web sites and game panels for game servers of various games. Expanded knowledge in university to build back-end with FlightPHP</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"  style="background-image: url('/src/assets/c++.png');"></span>
+                        <span class="programming cpp"  ></span>
                         <ve-progress :progress="40" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">40%</span></ve-progress>
                         <h3>C++</h3>
                         <p>I went on some courses. Later I learned it for a year in high school, making from simple programs to animated graphics.</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"  style="background-image: url('/src/assets/javascript.png');"></span>
+                        <span class="programming javascript"  ></span>
                         <ve-progress :progress="80" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">80%</span></ve-progress>
                         <h3>JavaScript</h3>
                         <p>Long joureny of learning. Started learning it in my early days for web development, used it through whole my "short" career with various frameworks, etc..</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"  style="background-image: url('/src/assets/java.png');"></span>
+                        <span class="programming java"  ></span>
                         <ve-progress :progress="55" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">55%</span></ve-progress>
                         <h3>Java</h3>
                         <p>Used in university a lot. For object-oriented programming course, writing JUNIT tests(selenium), algoritms and structures, mobile apps in android studio and more...</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"  style="background-image: url('/src/assets/c.png');"></span>
+                        <span class="programming c"  ></span>
                         <ve-progress :progress="40" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">40%</span></ve-progress>
                         <h3>C</h3>
                         <p>I learned it in university. I know basic concepts, pointers reading from files writing to files etc...</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"  style="background-image: url('/src/assets/octave.png');"></span>
+                        <span class="programming octave"  ></span>
                         <ve-progress :progress="35" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">35%</span></ve-progress>
                         <h3>Octave</h3>
                         <p>I used it for machine learning course in university. I know to process data and use it for mostly basic machine learning.</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"  style="background-image: url('/src/assets/sql.png');"></span>
+                        <span class="programming sql"  ></span>
                         <ve-progress :progress="80" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">80%</span></ve-progress>
                         <h3>SQL</h3>
                         <p>I learned basics in high school and by myself. Later on used extenstivly through university. I know to write complex queryes, functions, triggers, routines etc..</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"  style="background-image: url('/src/assets/go.png');"></span>
+                        <span class="programming go"  ></span>
                         <ve-progress :progress="30" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">30%</span></ve-progress>
                         <h3>Go</h3>
                         <p>I got assigned to make a game in Go in course programming languages at university. I know basic things about it.</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"  style="background-image: url('/src/assets/node.png');"></span>
+                        <span class="programming node"  ></span>
                         <ve-progress :progress="50" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">50%</span></ve-progress>
                         <h3>Node.js</h3>
                         <p>I learned how to use it developing a RAGE:MP(GTA V MP modification) game server.Node.js is used as server side scripting.</p>
                       </li>
                       <li>
-                        <span class="programming c-sharp"  style="background-image: url('/src/assets/vue.png');"></span>
+                        <span class="programming vue"  ></span>
                         <ve-progress :progress="65" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">65%</span></ve-progress>
                         <h3>Vue.js</h3>
                         <p>Also I learned vue.js developing RAGE:MP game server. Vue.js is used in custom browser as overlay for player interaction with server</p>
@@ -487,13 +487,44 @@ span
   display: inline-flex;
   width: 100px;
   height: 100px;
-}
-.c-sharp{
   background-image: url('./assets/pyhton.png');
   background-repeat: no-repeat;
   margin: 0 20px 0 0;
   background-size: contain;
   background-position: center;
+}
+.c-sharp{
+  background-image: url('./assets/c-sharp.png');
+}
+.c{
+  background-image: url('./assets/c.png');
+}
+.cpp{
+  background-image: url('./assets/c++.png');
+}
+.go{
+  background-image: url('./assets/go.png');
+}
+.java{
+  background-image: url('./assets/java.png');
+}
+.javascript{
+  background-image: url('./assets/javascript.png');
+}
+.node{
+  background-image: url('./assets/node.png');
+}
+.octave{
+  background-image: url('./assets/octave.png');
+}
+.php{
+  background-image: url('./assets/php.png');
+}
+.sql{
+  background-image: url('./assets/sql.png');
+}
+.vue{
+  background-image: url('./assets/vue.png');
 }
 .gridthree{
   display: grid;
