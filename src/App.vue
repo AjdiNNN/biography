@@ -168,7 +168,7 @@
                         <p>Used in university a lot. For object-oriented programming course, writing JUNIT tests(selenium), algoritms and structures, mobile apps in android studio and more...</p>
                       </li>
                       <li>
-                        <span class="programming c"  ></span>
+                        <span class="programming clang"  ></span>
                         <ve-progress :progress="40" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">40%</span></ve-progress>
                         <h3>C</h3>
                         <p>I learned it in university. I know basic concepts, pointers reading from files writing to files etc...</p>
@@ -496,7 +496,7 @@ span
 .c-sharp{
   background-image: url('./assets/c-sharp.png');
 }
-.c{
+.clang{
   background-image: url('./assets/c.png');
 }
 .cpp{
