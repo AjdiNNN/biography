@@ -11,8 +11,11 @@
 		<div class="links" :class="{ 'active': isMenuOpen }">
 		  <a href="#">HOME</a>
 		  <a href="#about">ABOUT</a>
-		  <a href="#">SERVICES</a>
-		  <a href="#">CONTACT</a>
+		  <a href="#">Experience</a>
+		  <a href="#">Education</a>
+		  <a href="#">Programming</a>
+		  <a href="#">Unity</a>
+		  <a href="#">Portofolio</a>
 		  <a href="#" class="resume">Resume<i class="fas fa-download"></i></a>
 		</div>
 		<div class="hamburger-menu" @click="toggleMenu">

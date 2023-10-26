@@ -1,5 +1,6 @@
 <template>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
   <Navigation />
   <div class="container">
         <div class="left-div">
@@ -29,7 +30,7 @@
                   About me
                 </h1>
                 <h3 style="color: #68e0cf;">My story</h3>
-                <div style="display: flex; width: 90%;">
+                <div style="display: flex;">
                   <p>
                     Gamer from young age. Started tinkering with programming and game modifications
                     for various multiplayer games.
@@ -38,7 +39,7 @@
                     Learned how to make multiplayer servers and scripts for them. Make 3d models, maps, animations for game mods.
                   </p>
                 </div>
-                <p style="max-width: 90%;">
+                <p>
                     In primary school went to competitive programming competitions, got golden gear as the one of the best technology related student in country. 
                     Continued with programming in high school and was the best in class of programming. Started learning unity in high school and also 3d modelling and 3d animation.
                     Worked on various things, programming languages. Passionate for technology and engineering.
@@ -112,7 +113,7 @@
                         <p>Intermediate level. I started learning at age of 11. I learned it in primary and high school. I should have knowledge of B1-B2 level.</p>
                         <div class="label" style="width: 60%;">60%</div>
                         <div class="percentage-bar">
-                          <div class="filler" style="width: 60%;"></div>
+                        <div class="filler" style="width: 60%;"></div>
                         </div>
                       </li>
                       <li>
@@ -120,8 +121,160 @@
                         <p>I had latin as subject for 2 years in school. I am able to make sentences and undestand what is written.</p>
                         <div class="label" style="width: 40%;">40%</div>
                         <div class="percentage-bar">
-                          <div class="filler" style="width: 40%;"></div>
+                        <div class="filler" style="width: 40%;"></div>
                       </div>
+                      </li>
+                  </ul>
+            </div>
+            <div class="content">
+                <h1>
+                  Programming
+                </h1>
+                <ul class="gridthree language">
+                      <li>
+                        <span class="programming c-sharp" style="background-image: url('/src/assets/c-sharp.png');"></span>
+                        <ve-progress :progress="90" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">90%</span></ve-progress>
+                        <h3>C#</h3>
+                        <p>I learned using Unity. Experience with it for several years.</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"></span>
+                        <ve-progress :progress="63" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">63%</span></ve-progress>
+                        <h3>Pyhton</h3>
+                        <p>I learned it and used it all over the place from hobby,high school to university. My senior design project was keylogger. It was mainly client sided pyhton app to capture user data.</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"  style="background-image: url('/src/assets/php.png');"></span>
+                        <ve-progress :progress="65" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">65%</span></ve-progress>
+                        <h3>PHP</h3>
+                        <p>I started thinkering with while making web sites and game panels for game servers of various games. Expanded knowledge in university to build back-end with FlightPHP</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"  style="background-image: url('/src/assets/c++.png');"></span>
+                        <ve-progress :progress="40" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">40%</span></ve-progress>
+                        <h3>C++</h3>
+                        <p>I went on some courses. Later I learned it for a year in high school, making from simple programs to animated graphics.</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"  style="background-image: url('/src/assets/javascript.png');"></span>
+                        <ve-progress :progress="80" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">80%</span></ve-progress>
+                        <h3>JavaScript</h3>
+                        <p>Long joureny of learning. Started learning it in my early days for web development, used it through whole my "short" career with various frameworks, etc..</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"  style="background-image: url('/src/assets/java.png');"></span>
+                        <ve-progress :progress="55" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">55%</span></ve-progress>
+                        <h3>Java</h3>
+                        <p>Used in university a lot. For object-oriented programming course, writing JUNIT tests(selenium), algoritms and structures, mobile apps in android studio and more...</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"  style="background-image: url('/src/assets/c.png');"></span>
+                        <ve-progress :progress="40" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">40%</span></ve-progress>
+                        <h3>C</h3>
+                        <p>I learned it in university. I know basic concepts, pointers reading from files writing to files etc...</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"  style="background-image: url('/src/assets/octave.png');"></span>
+                        <ve-progress :progress="35" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">35%</span></ve-progress>
+                        <h3>Octave</h3>
+                        <p>I used it for machine learning course in university. I know to process data and use it for mostly basic machine learning.</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"  style="background-image: url('/src/assets/sql.png');"></span>
+                        <ve-progress :progress="80" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">80%</span></ve-progress>
+                        <h3>SQL</h3>
+                        <p>I learned basics in high school and by myself. Later on used extenstivly through university. I know to write complex queryes, functions, triggers, routines etc..</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"  style="background-image: url('/src/assets/go.png');"></span>
+                        <ve-progress :progress="30" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">30%</span></ve-progress>
+                        <h3>Go</h3>
+                        <p>I got assigned to make a game in Go in course programming languages at university. I know basic things about it.</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"  style="background-image: url('/src/assets/node.png');"></span>
+                        <ve-progress :progress="50" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">50%</span></ve-progress>
+                        <h3>Node.js</h3>
+                        <p>I learned how to use it developing a RAGE:MP(GTA V MP modification) game server.Node.js is used as server side scripting.</p>
+                      </li>
+                      <li>
+                        <span class="programming c-sharp"  style="background-image: url('/src/assets/vue.png');"></span>
+                        <ve-progress :progress="65" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">65%</span></ve-progress>
+                        <h3>Vue.js</h3>
+                        <p>Also I learned vue.js developing RAGE:MP game server. Vue.js is used in custom browser as overlay for player interaction with server</p>
+                      </li>
+                  </ul>
+            </div>
+            <div class="content">
+                <h1>
+                  <i class="fa-brands fa-unity"></i> Unity
+                </h1>
+                <p>Hi! You are probably mostly interested in my Unity engine experience as it is the job I did mostly and it is thing I love to do.</p>
+               
+                <ul>
+                      <li>
+                        <h3><i class="fa-solid fa-pen-nib"></i> UNITY UI</h3>
+                          <p>My journey through Unity's UI system began with a mix of excitement and uncertainty. 
+                            At first, the multitude of components and options felt overwhelming, but I was determined to conquer it. 
+                            Starting with basic buttons and text elements, I gradually developed a profound understanding of Unity's UI capabilities.
+                            With time, I ventured into more complex territory, from making health bars to inventories, animations and more.
+                            I learned so UI dynamically responded to gameplay, and designing intricate in-game HUDs and world space canvases
+                            that enhanced the player experience. The flexibility and power of Unity's UI system gradually 
+                            transformed it from a formidable challenge into an indispensable asset in my game development toolkit..</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-burst"></i> VFX</h3>
+                          <p>The vast array of tools and options within Unity's VFX Graph filled me with both curiosity and caution. 
+                            Beginning with simple particle systems, I gradually unlocked the core concepts and techniques needed to create captivating visual effects.
+                            As I ventured deeper into VFX, I learned to manipulate VFX graphs and particle systems to control particle behaviors. 
+                            This dynamic process allowed me to craft complex, dynamic effects that added depth and immersion to my game worlds. 
+                            The ability to create realistic fire, smoke, water, and other intricate phenomena elevated my games to new heights of visual appeal.
+                          </p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-person"></i> 2D</h3>
+                          <p>My journey into Unity 2D game development has been an enlightening experience. 
+                            The tools at my disposal, such as 2D tiles, sprites, and animations, opened up a world of creative possibilities. 
+                            The Tilemap system allowed me to craft intricate game levels and terrains with ease.
+                            I found myself deeply engrossed in animating characters and objects, breathing life into my projects. 
+                            Generating tile terrains dynamically added an element of excitement to the gameplay. 
+                            The physics system ensured that interactions between 2D objects were lifelike and immersive..</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-gamepad"></i> INPUT</h3>
+                          <p>Learned using Unity. Experience with it for several years.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-dice-d6"></i> GRAPHICS</h3>
+                          <p>Learned using Unity. Experience with it for several years.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-mountain-city"></i> LEVEL DESIGN</h3>
+                          <p>Learned using Unity. Experience with it for several years.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-person-running"></i> Physics</h3>
+                          <p>Learned using Unity. Experience with it for several years.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-terminal"></i> Scripting</h3>
+                          <p>Learned using Unity. Experience with it for several years.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-globe"></i> Networking</h3>
+                          <p>Learned using Unity. Experience with it for several years.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-headphones"></i> Audio</h3>
+                          <p>Learned using Unity. Experience with it for several years.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-puzzle-piece"></i> Assets</h3>
+                          <p>Learned using Unity. Experience with it for several years.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-circle-nodes"></i> AI</h3>
+                          <p>Learned using Unity. Experience with it for several years.</p>
                       </li>
                   </ul>
             </div>
@@ -131,17 +284,19 @@
 
 <script>
 import Navigation from './components/Navigation.vue'
-
 export default {
   name: 'App',
   components: {
-    Navigation
+    Navigation,
   }
 }
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+.ve-progress .value {
+  color: #68e0cf; /* Change this to the desired font color */
+}
 .name {
   color: #ffffff;
   font-size: 4.5em;
@@ -188,11 +343,13 @@ export default {
 .content {
   background-color: #002642;
   padding-left: 8%;
+  padding-right: 8%;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   margin: 0 auto;
   border-bottom: 1px solid #585d65;
+  padding-bottom: 30px;
 }
 
 body {
@@ -210,7 +367,6 @@ body {
   display: contents;
 }
 p{
-  max-width: 350px;
   letter-spacing: 0;
   font-weight: 400;
   line-height: 26px;
@@ -238,7 +394,6 @@ h3{
 }
 
 .grid {
-  width: 95%;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns */
   justify-items: start;
@@ -285,7 +440,6 @@ span
   margin-right:25px;
 }
 .slider{
-  width: 95%;
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
@@ -302,11 +456,11 @@ span
 }
 
 .slider {
+  width: 100%;
   scrollbar-width: thin;
   scrollbar-color: #0011ff transparent;
 }
 .percentage-bar {
-  max-width: 350px;
   height: 5px;
   background: #003f86;
   position: relative;
@@ -314,18 +468,39 @@ span
 }
 
 .filler {
-  width: 0;
   height: 100%;
   background-color: #68e0cf; /* Change this color as needed */
   border-radius: 10px;
 }
 
 .label {
-  width: 100%;
   text-align: end;
   color: #68e0cf;
 }
 .language{
   grid-gap: 25px;
+}
+.value{
+  color: #68e0cf;
+}
+.programming{
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+}
+.c-sharp{
+  background-image: url('./assets/pyhton.png');
+  background-repeat: no-repeat;
+  margin: 0 20px 0 0;
+  background-size: contain;
+  background-position: center;
+}
+.gridthree{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: start;
+}
+.language p {
+  min-height: 100px;
 }
 </style>
