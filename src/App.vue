@@ -497,7 +497,7 @@ span
   background-image: url('./assets/c-sharp.png');
 }
 .clang{
-  background-image: url('./assets/c.png');
+  background-image: url('./assets/clang.png');
 }
 .cpp{
   background-image: url('./assets/c++.png');
