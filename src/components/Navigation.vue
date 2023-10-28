@@ -9,14 +9,21 @@
 	  </div>
 	  <div class="right">
 		<div class="links" :class="{ 'active': isMenuOpen }">
-		  <a href="#">HOME</a>
-		  <a href="#about">ABOUT</a>
-		  <a href="#">Experience</a>
-		  <a href="#">Education</a>
-		  <a href="#">Programming</a>
-		  <a href="#"><i class="fa-brands fa-unity"></i>&nbsp;Unity</a>
-		  <a href="#">Portofolio</a>
-		  <a href="#" class="resume">Resume<i class="fas fa-download"></i></a>
+			<a href="#">HOME</a>
+			<div class="dropdown">
+				<a class="dropbtn" href="#about">ABOUT&nbsp;<i class="fa fa-caret-down"></i>
+				</a>
+				<div class="dropdown-content">
+					<a class="dropdown-link" href="#experience">Experience</a>
+					<a class="dropdown-link" href="#languages">Languages</a>
+		  			<a class="dropdown-link" href="#education">Education</a>
+				</div>
+			</div> 
+			<a href="#program">Programming</a>
+			<a href="#unity"><i class="fa-brands fa-unity"></i>&nbsp;Unity</a>
+		  	<a href="#portofolio">Portofolio</a>
+			  <a href="#contact">Contact</a>
+		  	<a href="#" class="resume">Resume<i class="fas fa-download"></i></a>
 		</div>
 		<div class="hamburger-menu" @click="toggleMenu">
 		  <div class="bar"></div>
@@ -101,10 +108,8 @@ align-items: center;
 .links {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
     transition: transform 0.3s ease-in-out;
-    transform: translateX(0);
+
     align-items: center; /* Vertically center the links */
 }
 
@@ -130,7 +135,7 @@ transform: translateX(0%);
 .links a {
 	color: white;
 	text-decoration: none;
-	margin-right: 40px;
+	margin: auto 20px;
 	font-size: 16px;
 }
 
@@ -146,7 +151,28 @@ height: 3px;
 width: 25px;
 margin: 2px 0;
 }
-
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.dropdown-content a:hover {
+  background-color: #6a6b6d;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  margin: 0 auto;
+  padding: 12px 16px;
+  text-decoration: none;
+  background-color: #585d65;
+  color: #fff;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 @media (max-width: 768px) {
 	.resume{
 		border: none;
@@ -177,7 +203,6 @@ margin: 2px 0;
 		border-bottom-right-radius: 0px;
 	}
 	.links a {
-		margin: 10px;
 	}
 }
 </style>

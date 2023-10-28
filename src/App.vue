@@ -53,7 +53,7 @@
                   </ul>
             </div>
           
-            <div class="content">
+            <div class="content" id="experience">
                 <h1>
                   Experience
                 </h1>
@@ -70,7 +70,7 @@
                   </div>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="education">
                 <h1>
                   Education
                 </h1>
@@ -87,7 +87,7 @@
                   </div>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="languages">
                 <h1>
                   Languages
                 </h1>
@@ -126,7 +126,7 @@
                       </li>
                   </ul>
             </div>
-            <div class="content">
+            <div class="content" id="program">
                 <h1>
                   Programming
                 </h1>
@@ -205,7 +205,7 @@
                       </li>
                   </ul>
             </div>
-            <div class="content">
+            <div class="content" id="unity">
                 <h1>
                   <i class="fa-brands fa-unity"></i> Unity
                 </h1>
@@ -316,7 +316,7 @@
                       </li>
                   </ul>
             </div>
-            <div class="content">
+            <div class="content" id="portofolio">
               <h1>Portofolio</h1>
               <div class="portofolio-navigation">
                   <a
@@ -347,7 +347,7 @@
                 <div class="sketchfab-embed-wrapper"> <iframe title="Shoutgun Android Futuristic" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/67a4cb120eaa497a866fe074e78335c7/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/shoutgun-android-futuristic-67a4cb120eaa497a866fe074e78335c7?utm_medium=embed&utm_campaign=share-popup&utm_content=67a4cb120eaa497a866fe074e78335c7" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Shoutgun Android Futuristic </a> by <a href="https://sketchfab.com/ajdinnnn?utm_medium=embed&utm_campaign=share-popup&utm_content=67a4cb120eaa497a866fe074e78335c7" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> ajdinnnn </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=67a4cb120eaa497a866fe074e78335c7" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
               </div>
             </div>
-            <div class="content">
+            <div class="content" id="contact">
               <h1>Contact</h1>
               <ul class="contact">
                 <li>  
