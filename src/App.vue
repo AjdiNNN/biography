@@ -4,6 +4,17 @@
   <Navigation />
   <div class="container">
         <div class="left-div">
+          <div class="group">
+            <a href="https://www.instagram.com/hukicajdin/" class="element">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ajdin-huki%C4%87-720243203/" class="element">
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            <a href="https://github.com/AjdiNNN" class="element">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
         <div class="right-div">
             <div class="content" style="height: 150px; border-bottom: none;">
@@ -416,6 +427,35 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+.left-div .group {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+
+.left-div .element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  margin: 15px;
+  color: #002642;
+  border: 2px solid #002642;
+  padding: 10px;
+  border-radius: 50%;
+}
+.left-div .element i {
+  display: flex;
+  justify-content: center;
+}
+
+.left-div .element:hover {
+  color: #68e0cf;
+  border: 2px solid #68e0cf;
+  cursor: pointer;
+}
 .ve-progress .value {
   color: #68e0cf; /* Change this to the desired font color */
 }
