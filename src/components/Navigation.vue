@@ -14,7 +14,7 @@
 		  <a href="#">Experience</a>
 		  <a href="#">Education</a>
 		  <a href="#">Programming</a>
-		  <a href="#">Unity</a>
+		  <a href="#"><i class="fa-brands fa-unity"></i>&nbsp;Unity</a>
 		  <a href="#">Portofolio</a>
 		  <a href="#" class="resume">Resume<i class="fas fa-download"></i></a>
 		</div>
@@ -77,9 +77,11 @@ methods: {
 
 .logo {
     background-image: url(/src/assets/logo.webp);
-    min-height: 50px;
-    min-width: 50px;
+    min-width: 40px;
+	height: 40px;
     background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .name {

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "steamwidgets": "^1.0.9",
     "vue": "^3.3.4",
     "vue-ellipse-progress": "^2.1.1"
   },
