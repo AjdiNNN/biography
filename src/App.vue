@@ -1,9 +1,19 @@
 <template>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
   <Navigation />
   <div class="container">
         <div class="left-div">
+          <div class="group">
+            <a href="https://www.instagram.com/hukicajdin/" class="element">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ajdin-huki%C4%87-720243203/" class="element">
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            <a href="https://github.com/AjdiNNN" class="element">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
         <div class="right-div">
             <div class="content" style="height: 150px; border-bottom: none;">
@@ -171,7 +181,7 @@
                         <span class="programming clang"  ></span>
                         <ve-progress :progress="40" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">40%</span></ve-progress>
                         <h3>C</h3>
-                        <p>I learned it in university. I know basic concepts, pointers reading from files writing to files etc...</p>
+                        <p>I learned it in university. I know basic concepts, pointers, reading from files writing to files etc...</p>
                       </li>
                       <li>
                         <span class="programming octave"  ></span>
@@ -195,7 +205,7 @@
                         <span class="programming node"  ></span>
                         <ve-progress :progress="50" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">50%</span></ve-progress>
                         <h3>Node.js</h3>
-                        <p>I learned how to use it developing a RAGE:MP(GTA V MP modification) game server.Node.js is used as server side scripting.</p>
+                        <p>I learned how to use it developing a RAGE:MP(GTA V MP modification) game server. Node.js is used as server side scripting.</p>
                       </li>
                       <li>
                         <span class="programming vue"  ></span>
@@ -351,18 +361,18 @@
               <h1>Contact</h1>
               <ul class="contact">
                 <li>  
-                  <form action="">
+                  <form ref="form" @submit.prevent="sendEmail">
                     <div class="group-val">
                       <label for="fname">Full Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="eg. Ajdin Hukić">
+                      <input type="text" name="user_name" placeholder="eg. Ajdin Hukić">
                     </div>
                     <div class="group-val">
-                      <label for="email">Email</label>
-                      <input type="text" id="email" name="firstname" placeholder="ajdinhukic007@gmail.com">
+                      <label for="email">Email *</label>
+                      <input name='email' type='email' placeholder="ajdinhukic007@gmail.com">
                     </div>
                     <div class="group-val">
-                      <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="eg. Hello, I am contacting you regarding open position at...." style="height:100px"></textarea>
+                      <label for="subject">Subject *</label>
+                      <textarea name='query' placeholder="eg. Hello, I am contacting you regarding open position at...." style="height:100px"></textarea>
                     </div>
                     <button>Send Message&nbsp;&nbsp;<i class="fa-solid fa-chevron-right" style="color:#68e0cf"></i></button>
                   </form>
@@ -390,6 +400,8 @@
 import Navigation from './components/Navigation.vue'
 import 'steamwidgets';
 import 'steamwidgets/steam_app';
+import emailjs from '@emailjs/browser';
+
 export default {
   name: 'App',
   components: {
@@ -410,12 +422,49 @@ export default {
       this.sketchfab = false;
       this.steam = true;
 	  },
-},
+    sendEmail() {
+      emailjs.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, this.$refs.form, import.meta.env.VITE_PUBLIC_API)
+        .then((result) => {
+            this.$toast.success(`Message send`);
+        }, (error) => {
+            this.$toast.error(error.text);
+        });
+    }
+  },
 }
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+.left-div .group {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+
+.left-div .element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  margin: 15px;
+  color: #002642;
+  border: 2px solid #002642;
+  padding: 10px;
+  border-radius: 50%;
+}
+.left-div .element i {
+  display: flex;
+  justify-content: center;
+}
+
+.left-div .element:hover {
+  color: #68e0cf;
+  border: 2px solid #68e0cf;
+  cursor: pointer;
+}
 .ve-progress .value {
   color: #68e0cf; /* Change this to the desired font color */
 }
@@ -707,7 +756,7 @@ span
   width: 100%;
   height: 100%;
 }
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
   padding-left:30px;
   display: block;
   font-family: "Poppins";
@@ -727,7 +776,7 @@ input[type=text], select, textarea {
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 }
-input[type=text]:focus, select:focus, textarea:focus{
+input[type=text]:focus, select:focus, textarea:focus, input[type=email]:focus{
   border: 1px solid #178387;
 
 }
