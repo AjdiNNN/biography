@@ -187,6 +187,14 @@ margin: 2px 0;
 	.navbar{
 		width: 80%;
 	}
+	
+}
+@media (max-width: 680px) {
+	.navbar{
+		width: 80%;
+		position: absolute;
+	}
+	
 }
 @media (max-width: 1250px) {
 	.resume{

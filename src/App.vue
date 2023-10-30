@@ -891,11 +891,31 @@ input[type=submit]:hover {
   }
   .balloncontainer{
     align-items: center;
+    padding-bottom: 0px;
   }
   .ballon{
     margin-left: 0;
-    margin-top: -10em;
-    height: 400px;
+    margin-top: -9em;
+    height: 300px;
+    width: 300px;
+  }
+  .name{
+    font-size: 3.5em;
+  }
+  .group{
+    bottom: 20% !important;
+  }
+  .gridthree{
+    grid-template-columns: 1fr 1fr;
+  }
+  .sketchfab-grid{
+    grid-template-columns: 1fr;
+  }
+  .contact{
+    grid-template-columns: 1fr;
+  }
+  input[type=text], input[type=email], select, textarea{
+    width: 90%;
   }
 }
 </style>
