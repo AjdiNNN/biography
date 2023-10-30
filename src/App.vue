@@ -470,7 +470,7 @@ export default {
 }
 .empty{
   height: 150px; 
-  border-bottom: none;
+  border-bottom: none !important;
 }
 .balloncontainer{
   border-bottom: none !important; 

@@ -47,7 +47,7 @@ data() {
 },
 methods: {
 	toggleMenu() {
-	this.isMenuOpen = !this.isMenuOpen;
+		this.isMenuOpen = !this.isMenuOpen;
 	},
 },
 };
@@ -133,7 +133,7 @@ align-items: center;
 }
 
 .links.active {
-transform: translateX(0%);
+	display: flex;
 }
 
 .links a {
@@ -210,7 +210,7 @@ margin: 2px 0;
 		position: absolute;
 		top: 60px;
 		z-index: 1;
-		transform: translateX(150%);
+		display: none;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
 	}
