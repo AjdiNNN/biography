@@ -555,7 +555,7 @@ p{
   text-align: justify;
 }
 h1{
-  font-size: 55px;
+  font-size: 2.5em;
   line-height: 1.2;
   color: #FFF;
   font-weight: 800;
@@ -877,10 +877,13 @@ input[type=submit]:hover {
   min-height: 70px;
 }
 @media (max-width: 960px) {
+  .h1{
+
+  }
   .left-div{
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 600px;
   }
   .right-div{
     width: auto;

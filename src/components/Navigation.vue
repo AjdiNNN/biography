@@ -220,7 +220,7 @@ margin: 2px 0;
 	}
 
 	.links.active {
-		transform: translateX(-74.6%);
+		right: 0;
 	}
 	.navbar.active {
 		border-bottom-right-radius: 0px;
