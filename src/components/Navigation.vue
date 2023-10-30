@@ -19,6 +19,10 @@
 		  			<a class="dropdown-link" href="#education">Education</a>
 				</div>
 			</div> 
+			<a class="dropdown-link-mobile" href="#about">ABOUT</a>
+			<a class="dropdown-link-mobile" href="#experience">Experience</a>
+			<a class="dropdown-link-mobile" href="#languages">Languages</a>
+			<a class="dropdown-link-mobile" href="#education">Education</a>
 			<a href="#program">Programming</a>
 			<a href="#unity"><i class="fa-brands fa-unity"></i>&nbsp;Unity</a>
 		  	<a href="#portofolio">Portofolio</a>
@@ -173,7 +177,18 @@ margin: 2px 0;
 .dropdown:hover .dropdown-content {
   display: block;
 }
-@media (max-width: 768px) {
+.dropdown{
+	display: block;
+}
+.dropdown-link-mobile{
+	display: none !important;
+}
+@media (max-width: 860px) {
+	.navbar{
+		width: 80%;
+	}
+}
+@media (max-width: 1250px) {
 	.resume{
 		border: none;
 	}
@@ -185,7 +200,7 @@ margin: 2px 0;
 		flex-direction: column;
 		background-color: #585d65;
 		position: absolute;
-		top: 70px;
+		top: 60px;
 		z-index: 1;
 		transform: translateX(150%);
 		border-bottom-left-radius: 5px;
@@ -197,12 +212,19 @@ margin: 2px 0;
 	}
 
 	.links.active {
-		transform: translateX(-67.4%);
+		transform: translateX(-74.6%);
 	}
 	.navbar.active {
 		border-bottom-right-radius: 0px;
 	}
 	.links a {
+		padding: 10px 0;
+	}
+	.dropdown{
+		display: none;
+	}
+	.dropdown-link-mobile{
+		display: block !important;
 	}
 }
 </style>

@@ -16,9 +16,9 @@
           </div>
         </div>
         <div class="right-div">
-            <div class="content" style="height: 150px; border-bottom: none;">
+            <div class="content empty">
             </div>
-            <div class="content" style="border-bottom: none;">
+            <div class="content balloncontainer">
                 <div class="ballon">
                   <div class="name">AJDIN</div>
                     <div class="name">HUKIĆ</div>
@@ -468,6 +468,13 @@ export default {
 .ve-progress .value {
   color: #68e0cf; /* Change this to the desired font color */
 }
+.empty{
+  height: 150px; 
+  border-bottom: none;
+}
+.balloncontainer{
+  border-bottom: none !important; 
+}
 .name {
   color: #ffffff;
   font-size: 4.5em;
@@ -497,20 +504,18 @@ export default {
   position: fixed;
   left: 0;
   top: 0;
-  width: 50%; /* Adjust the width as needed */
+  width: 50%;
   height: 100%;
 }
 
 .right-div {
-    margin-left: 50%; /* Adjust margin to accommodate the left div */
+    margin-left: 50%;
     background-color: #002642;
     width: 48%;
     border-right: 1px solid #585d65;
 }
 
-/* Add your other CSS styles here */
 
-/* Example content styles */
 .content {
   background-color: #002642;
   padding-left: 8%;
@@ -871,15 +876,26 @@ input[type=submit]:hover {
   width: 100%;
   min-height: 70px;
 }
-@media (max-width: 800px) {
-  .sketchfab-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns when zoomed out */
+@media (max-width: 960px) {
+  .left-div{
+    position: relative;
+    width: 100%;
+    height: 800px;
   }
-}
-
-@media (max-width: 400px) {
-  .sketchfab-grid {
-    grid-template-columns: repeat(1, 1fr); /* 1 column when zoomed in */
+  .right-div{
+    width: auto;
+    margin: 0 auto;
+  }
+  .empty{
+    display: none;
+  }
+  .balloncontainer{
+    align-items: center;
+  }
+  .ballon{
+    margin-left: 0;
+    margin-top: -10em;
+    height: 400px;
   }
 }
 </style>
