@@ -877,8 +877,8 @@ input[type=submit]:hover {
   min-height: 70px;
 }
 @media (max-width: 960px) {
-  .h1{
-
+  .language{
+    grid-template-columns: none;
   }
   .left-div{
     position: relative;
