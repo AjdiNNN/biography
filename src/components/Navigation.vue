@@ -27,7 +27,7 @@
 			<a href="#unity"><i class="fa-brands fa-unity"></i>&nbsp;Unity</a>
 		  	<a href="#portofolio">Portofolio</a>
 			  <a href="#contact">Contact</a>
-		  	<a href="../assets/ajdin_hukic_cv.pdf" class="resume">Resume<i class="fas fa-download"></i></a>
+		  	<a href="../assets/ajdin_hukic_cv.pdf" class="resume" locale={false}>Resume<i class="fas fa-download"></i></a>
 		</div>
 		<div class="hamburger-menu" @click="toggleMenu">
 		  <div class="bar"></div>
