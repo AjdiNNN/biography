@@ -342,8 +342,8 @@
                     <h4><i class="fa-solid fa-cube"></i> SketchFab</h4>
                   </a>
               </div>
-              <div v-if="steam">
-                <steam-app appid="1555470"></steam-app>
+              <div v-if="steam" class="steam">
+                <iframe src="https://store.steampowered.com/widget/1555470/" scrolling="no" class="steam-item" frameborder="0"></iframe>
               </div>
               <div class="sketchfab-grid" v-else-if="sketchfab">
                 <div class="sketchfab-embed-wrapper"> <iframe title="Sink" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups allow-forms" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" src="https://sketchfab.com/models/71ff5a9dc9b74f43923a88e1c5c03b8a/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/sink-71ff5a9dc9b74f43923a88e1c5c03b8a?utm_medium=embed&utm_campaign=share-popup&utm_content=71ff5a9dc9b74f43923a88e1c5c03b8a" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Sink </a> by <a href="https://sketchfab.com/ajdinnnn?utm_medium=embed&utm_campaign=share-popup&utm_content=71ff5a9dc9b74f43923a88e1c5c03b8a" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> ajdinnnn </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=71ff5a9dc9b74f43923a88e1c5c03b8a" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
@@ -920,5 +920,17 @@ input[type=submit]:hover {
   input[type=text], input[type=email], select, textarea{
     width: 90%;
   }
+}
+.steam{
+  width: 100%;
+}
+.steam-item{
+  background-color: #002642;
+  margin: 25px 0;
+  width:100%;
+  min-height: 190px;
+}
+.steam-item html{
+  background-color: #002642;
 }
 </style>
