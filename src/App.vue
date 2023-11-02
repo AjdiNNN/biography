@@ -76,7 +76,7 @@
                   <div class="item"> 
                     <div class="date">2021-</div>
                     <div class="item-name">Black Top Games  <p><i class="fa-solid fa-code"></i> Unity Game developer </p></div>
-                    <p>Part-time <br>Remote</p>
+                    <p>Part-time <br> Full-time since October 2023 <br>Remote</p>
                   </div>
                 </div>
             </div>
