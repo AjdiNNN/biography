@@ -363,7 +363,7 @@
                 <li>  
                   <form ref="form" @submit.prevent="sendEmail">
                     <div class="group-val">
-                      <label for="fname">Full Name</label>
+                      <label for="user_name">Full Name</label>
                       <input type="text" name="user_name" placeholder="eg. Ajdin Hukić">
                     </div>
                     <div class="group-val">
