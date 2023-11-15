@@ -56,7 +56,7 @@
                 </p>
                   <ul class="grid">
                       <li><strong>AGE</strong> 22</li>
-                      <li><strong>PHONE</strong> +386 64 45 50 536</li>
+                      <li><strong>PHONE</strong> +387 64 45 50 536</li>
                       <li><strong>STATUS</strong> Open to work</li>
                       <li><strong>EMAIL</strong> ajdinhukic007@gmail.com</li>
                       <li><strong>RESIDENCE</strong> Zenica, BA</li>
@@ -382,7 +382,7 @@
                   <h3>IT Specialist</h3>
                   <ul style="margin: 35px 0 50px 0;">
                       <li><strong>AGE</strong> <div>22</div></li>
-                      <li><strong>PHONE</strong> <div>+386 64 45 50 536</div></li>
+                      <li><strong>PHONE</strong> <div>+387 64 45 50 536</div></li>
                       <li><strong>STATUS</strong> <div>Open to work</div></li>
                       <li><strong>EMAIL</strong> <div>ajdinhukic007@gmail.com</div> </li>
                       <li><strong>RESIDENCE</strong> <div>Zenica, BA</div></li>
