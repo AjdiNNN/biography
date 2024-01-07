@@ -69,7 +69,7 @@
                 </h1>
                 <div class="slider">
                   <div class="item"> 
-                    <div class="date">2015-2021</div>
+                    <div class="date">2017-2020</div>
                     <div class="item-name">Master Games Studio <a href="https://themastergames.com/"><i class="fa-solid fa-link"></i></a><p><i class="fa-solid fa-code"></i> Unity Game developer </p></div>
                     <p>Freelance</p>
                   </div>
