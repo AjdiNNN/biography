@@ -150,7 +150,7 @@
                       <li>
                         <span class="programming"></span>
                         <ve-progress :progress="63" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">63%</span></ve-progress>
-                        <h3>Pyhton</h3>
+                        <h3>Python</h3>
                         <p>I learned it and used it all over the place from hobby,high school to university. My senior design project was keylogger. It was mainly client sided pyhton app to capture user data.</p>
                       </li>
                       <li>
