@@ -468,7 +468,9 @@ export default {
   bottom: 3%;
   right: 3%;
 }
-
+.container{
+  width: 100%;
+}
 .left-div .element {
   display: flex;
   flex-direction: column;
@@ -905,6 +907,9 @@ input[type=submit]:hover {
   min-height: 70px;
 }
 @media (max-width: 960px) {
+  .right-div {
+  width: 100%;
+}
   .language{
     grid-template-columns: none;
   }
@@ -914,7 +919,6 @@ input[type=submit]:hover {
     height: 600px;
   }
   .right-div{
-    width: auto;
     margin: 0 auto;
   }
   .empty{
