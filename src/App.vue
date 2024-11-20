@@ -75,7 +75,7 @@
                   </div>
                   <div class="item"> 
                     <div class="date">Feb 2021 - May 2024</div>
-                    <div class="item-name">Black Top Games <a href="https://themastergames.com/">  <i class="fa-solid fa-link"></i></a><p><i class="fa-solid fa-code"></i> Unity developer </p><p>Part-time <br> Full-time since October 2023 <br>Remote</p>  </div>
+                    <div class="item-name">Black Top Games<p><i class="fa-solid fa-code"></i> Unity developer </p><p>Part-time <br> Full-time since October 2023 <br>Remote</p>  </div>
                   </div>
                   <div class="item"> 
                     <div class="date">Dec 2017 - Sep 2020</div>
