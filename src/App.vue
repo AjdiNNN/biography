@@ -55,7 +55,7 @@
                     Worked on various things, programming languages. Passionate for technology and engineering.
                 </p>
                   <ul class="grid">
-                      <li><strong>AGE</strong> 22</li>
+                      <li><strong>AGE</strong> {{ age }}</li>
                       <li><strong>PHONE</strong> +387 64 45 50 536</li>
                       <li><strong>STATUS</strong> Open to work</li>
                       <li><strong>EMAIL</strong> ajdinhukic007@gmail.com</li>
@@ -68,15 +68,18 @@
                   Experience
                 </h1>
                 <div class="slider">
+
                   <div class="item"> 
-                    <div class="date">2017-2020</div>
-                    <div class="item-name">Master Games Studio <a href="https://themastergames.com/"><i class="fa-solid fa-link"></i></a><p><i class="fa-solid fa-code"></i> Unity Game developer </p></div>
-                    <p>Freelance</p>
+                    <div class="date">Jun 2024 - </div>
+                    <div class="item-name">Rolla <a href="https://www.rolla.app/">  <i class="fa-solid fa-link"></i></a><p><i class="fa-solid fa-code"></i> Unity Engineer </p><p>Full-time </p>  </div>
                   </div>
                   <div class="item"> 
-                    <div class="date">2021-</div>
-                    <div class="item-name">Black Top Games  <p><i class="fa-solid fa-code"></i> Unity Game developer </p></div>
-                    <p>Part-time <br> Full-time since October 2023 <br>Remote</p>
+                    <div class="date">Feb 2021 - May 2024</div>
+                    <div class="item-name">Black Top Games <a href="https://themastergames.com/">  <i class="fa-solid fa-link"></i></a><p><i class="fa-solid fa-code"></i> Unity developer </p><p>Part-time <br> Full-time since October 2023 <br>Remote</p>  </div>
+                  </div>
+                  <div class="item"> 
+                    <div class="date">Dec 2017 - Sep 2020</div>
+                    <div class="item-name">Master Games Studio <a href="https://themastergames.com/">  <i class="fa-solid fa-link"></i></a><p><i class="fa-solid fa-code"></i> Unity developer </p> <p>Freelance</p> </div>
                   </div>
                 </div>
             </div>
@@ -397,7 +400,7 @@
 </template>
 
 <script>
-import Navigation from './components/Navigation.vue'
+import Navigation from './components/Navigation.vue';
 import 'steamwidgets';
 import 'steamwidgets/steam_app';
 import emailjs from '@emailjs/browser';
@@ -407,13 +410,25 @@ export default {
   components: {
     Navigation,
   },
-  data: function () {
+  data() {
     return {
+      birthDate: import.meta.env.VITE_BIRTH_DATE, // Fetch birth date from .env
+      age: 0, // Initialize age
       steam: true,
       sketchfab: false,
     };
   },
   methods: {
+    calculateAge() {
+      const birthDate = new Date(this.birthDate);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const monthDiff = today.getMonth() - birthDate.getMonth();
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      this.age = age;
+    },
     toggleSketchFab() {
       this.steam = false;
       this.sketchfab = true;
@@ -421,19 +436,30 @@ export default {
     toggleSteam() {
       this.sketchfab = false;
       this.steam = true;
-	  },
+    },
     sendEmail() {
-      emailjs.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, this.$refs.form, import.meta.env.VITE_PUBLIC_API)
-        .then((result) => {
-            this.$toast.success(`Message send`);
-        }, (error) => {
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_SERVICE,
+          import.meta.env.VITE_TEMPLATE,
+          this.$refs.form,
+          import.meta.env.VITE_PUBLIC_API
+        )
+        .then(
+          (result) => {
+            this.$toast.success(`Message sent`);
+          },
+          (error) => {
             this.$toast.error(error.text);
-        });
-    }
+          }
+        );
+    },
   },
-}
+  mounted() {
+    this.calculateAge(); // Calculate age on component mount
+  },
+};
 </script>
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
 .left-div .group {
@@ -606,6 +632,7 @@ span
   transform: rotate(90deg);
 }
 .item-name{
+  text-align: left;
   margin: 0 0 30px 30px;
   font-size: 18px;
   color: #FFF;
