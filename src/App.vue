@@ -418,6 +418,7 @@ export default {
       sketchfab: false,
     };
   },
+  
   methods: {
     calculateAge() {
       const birthDate = new Date(this.birthDate);
