@@ -70,7 +70,7 @@
                 <div class="slider">
 
                   <div class="item"> 
-                    <div class="date">Jun 2024 - </div>
+                    <div class="date">Jun 2024 - Jun 2025</div>
                     <div class="item-name">Rolla <a href="https://www.rolla.app/">  <i class="fa-solid fa-link"></i></a><p><i class="fa-solid fa-code"></i> Unity Engineer </p><p>Full-time </p>  </div>
                   </div>
                   <div class="item"> 
@@ -220,130 +220,81 @@
             </div>
             <div class="content" id="unity">
                 <h1>
-                  <i class="fa-brands fa-unity"></i> Unity
+                <i class="fa-brands fa-unity"></i> Unity Expertise
                 </h1>
-                <p>Hi! You are probably mostly interested in my Unity engine experience as it is the job I did mostly and it is thing I love to do.</p>
-               
+                <p>With over 6 years of professional Unity development experience across multiple studios and projects, I've developed deep expertise in various aspects of game development. Here's a detailed breakdown of my Unity skills:</p>
+              
                 <ul>
                       <li>
-                        <h3><i class="fa-solid fa-pen-nib"></i> UNITY UI</h3>
-                          <p>My journey through Unity's UI system began with a mix of excitement and uncertainty. 
-                            At first, the multitude of components and options felt overwhelming, but I was determined to conquer it. 
-                            Starting with basic buttons and text elements, I gradually developed a profound understanding of Unity's UI capabilities.
-                            With time, I ventured into more complex territory, from making health bars to inventories, animations and more.
-                            I learned so UI dynamically responded to gameplay, and designing intricate in-game HUDs and world space canvases
-                            that enhanced the player experience. The flexibility and power of Unity's UI system gradually 
-                            transformed it from a formidable challenge into an indispensable asset in my game development toolkit..</p>
+                        <h3><i class="fa-solid fa-globe"></i> OPEN WORLD DEVELOPMENT</h3>
+                          <p>At Rolla, I worked extensively on an open world running/cycling game using Unity DOTS for performance optimization. I developed custom rendering pipelines for vegetation and environment rendering, significantly improving visual quality while maintaining performance. My work included implementing shaders using both Shader Graph and HLSL, and optimizing the game using Unity Profiler and Windows Performance Analyzer to enhance frame rates and memory management.</p>
                       </li>
                       <li>
-                        <h3><i class="fa-solid fa-burst"></i> VFX</h3>
-                          <p>The vast array of tools and options within Unity's VFX Graph filled me with both curiosity and caution. 
-                            Beginning with simple particle systems, I gradually unlocked the core concepts and techniques needed to create captivating visual effects.
-                            As I ventured deeper into VFX, I learned to manipulate VFX graphs and particle systems to control particle behaviors. 
-                            This dynamic process allowed me to craft complex, dynamic effects that added depth and immersion to my game worlds. 
-                            The ability to create realistic fire, smoke, water, and other intricate phenomena elevated my games to new heights of visual appeal.
+                        <h3><i class="fa-solid fa-network-wired"></i> MULTIPLAYER SYSTEMS</h3>
+                          <p>I have substantial experience with multiplayer implementations, including managing socket connections to backend services and handling client-server communication. At Rolla, I worked on the multiplayer server connection and display systems. Additionally, at Black Top Games, I implemented real-time multiplayer functionality using Unity's new multiplayer systems for a motion-controlled ball racing game.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-pen-nib"></i> UI & TOOL DEVELOPMENT</h3>
+                          <p>I've created complex UI systems with animations and developed internal tools to streamline workflows for artists, animators, and other team members. My work on a tycoon game at Black Top Games focused heavily on UI animations and creating a robust platform for game mechanics calculations.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-burst"></i> VFX & SHADERS</h3>
+                          <p>I'm proficient with both Unity's VFX Graph and traditional particle systems. My experience includes creating various visual effects for games, from environmental effects to gameplay VFX. I've implemented custom shaders using both visual tools like Shader Graph and code-based approaches with HLSL.</p>
+                      </li>
+                      <li>
+                        <h3><i class="fa-solid fa-gamepad"></i> GAME MECHANICS</h3>
+                          <p>I've implemented diverse game systems including:
+                            <ul>
+                              <li>Random 2D world generation with day/night cycles for a top-down shooter</li>
+                              <li>Hex-based turn-based strategy systems with procedural map generation</li>
+                              <li>Inventory management systems</li>
+                              <li>Motion controls using device accelerometers</li>
+                              <li>Turn-based game mechanics</li>
+                            </ul>
                           </p>
                       </li>
                       <li>
-                        <h3><i class="fa-solid fa-person"></i> 2D</h3>
-                          <p>My journey into Unity 2D game development has been an enlightening experience. 
-                            The tools at my disposal, such as 2D tiles, sprites, and animations, opened up a world of creative possibilities. 
-                            The Tilemap system allowed me to craft intricate game levels and terrains with ease.
-                            I found myself deeply engrossed in animating characters and objects, breathing life into my projects. 
-                            Generating tile terrains dynamically added an element of excitement to the gameplay. 
-                            The physics system ensured that interactions between 2D objects were lifelike and immersive..</p>
-                      </li>
-                      <li>
-                        <h3><i class="fa-solid fa-gamepad"></i> INPUT</h3>
-                          <p>My journey through the Unity Input System has been marked by evolution and innovation. 
-                            Initially, I worked with the old input system, which was rigid and required extensive coding to handle different input devices.                     
-                            The introduction of Unity's new Input System was a game-changer. It offered a more intuitive, flexible, and cohesive approach to input handling. 
-                            This transition allowed me to focus on the creative aspects of game development, making my projects better.
-                            I was an early adopter of the new Input System during its beta stages due to its efficiency and user-friendliness. 
-                            It continued to improve, offering versatile control schemes and support for various input devices. 
-                            The streamlined API and developer tools accelerated my development cycles, and new input system is my way to go today, altough I can use old one too.
+                        <h3><i class="fa-solid fa-dice-d6"></i> 3D & 2D DEVELOPMENT</h3>
+                          <p>My experience spans both 3D and 2D development:
+                            <ul>
+                              <li>Integrated 3D assets from artists into games with proper optimization</li>
+                              <li>Developed animation systems working closely with animators</li>
+                              <li>Created 2D sprite-based games with animation systems</li>
+                              <li>Experience with 3D modeling and UV mapping from my freelance work</li>
+                            </ul>
                           </p>
                       </li>
                       <li>
-                        <h3><i class="fa-solid fa-dice-d6"></i> GRAPHICS</h3>
-                          <p>
-                            One of the key elements that significantly enhanced my graphics capabilities was adopting Unity's Universal Render Pipeline (URP or LWRP). 
-                            URP brought a modern and efficient rendering solution, allowing me to achieve stunning visuals while maintaining optimal performance across 
-                            various platforms. In addition to URP, I've gained a deep understanding of post-processing effects, which has allowed me to control lighting, 
-                            color grading, and various visual enhancements in my projects. This knowledge has been instrumental in creating visually captivating and immersive
-                            game environments. Furthermore, I'm proficient in 3D modeling, texture creation, and UV mapping, which enables me to craft custom assets and 
-                            textures that fit seamlessly into my game worlds. This ability has been crucial in achieving a unique visual style in my projects. One of my standout 
-                            skills in the realm of graphics is shader development. I'm well-versed in writing custom shaders to achieve specific visual effects and optimizations. 
-                            Moreover, I'm proficient in creating shaders using Shader Graph, providing a more visual and intuitive approach to shader development. With my previous
-                            experience in Visual Effects (VFX), as mentioned earlier, I can seamlessly integrate particle systems and dynamic effects into my game worlds, 
-                            further enhancing the overall visual experience.</p>
+                        <h3><i class="fa-solid fa-gears"></i> PIPELINE & AUTOMATION</h3>
+                          <p>At Rolla, I collaborated with DevOps to automate build pipelines, significantly improving development efficiency. I'm experienced with Unity's scripting API and have created numerous editor tools to streamline development workflows across all my projects.</p>
                       </li>
                       <li>
-                        <h3><i class="fa-solid fa-mountain-city"></i> LEVEL DESIGN</h3>
-                          <p>My experience in level design within Unity has been a dynamic and creative journey, marked by the use of various powerful tools and techniques. 
-                            I've harnessed the potential of assets like Gaia and the Glyph Terrain Shader to craft diverse and visually stunning landscapes. 
-                            These tools have allowed me to generate terrains with rich textures and realistic features, adding depth and immersion to my game environments. 
-                            In conjunction with Gaia, Gena has been a valuable addition, enabling me to populate these terrains with a wide range of assets, fostering an 
-                            ecosystem that feels both natural and vibrant. Moreover, I've worked extensively with Unity's built-in terrain system, harnessing its capabilities 
-                            to create captivating 2D level designs and exploring its potential for procedurally generated content. The ability to integrate captivating skyboxes,
-                            whether custom-made or from the Asset Store, has further enriched the ambiance of my levels.</p>
+                        <h3><i class="fa-solid fa-mobile-screen"></i> MOBILE DEVELOPMENT</h3>
+                          <p>During my time at Master Games Studio, I worked on mobile casual games, gaining experience with platform-specific optimizations, touch controls, and the unique challenges of mobile game development.</p>
                       </li>
-                      <li>
-                        <h3><i class="fa-solid fa-person-running"></i> Physics</h3>
-                          <p>My journey with physics in Unity has been an immersive experience, taking me through the intricacies of creating dynamic and realistic 
-                            simulations within my game worlds. Unity's robust physics engine has been my go-to tool for building interactive environments. By employing 
-                            rigidbodies and colliders, I've established the fundamental rules governing object interactions, from character movements to complex relationships 
-                            between in-game elements. I've also delved into Unity's 2D physics capabilities, using them to craft captivating 2D games with responsive, 
-                            physics-driven gameplay. In this exploration, understanding the collision matrix and its control has been crucial. It allowed me to fine-tune 
-                            how objects interact and collide, granting me precise control over which objects affect one another, thus optimizing both realism and playability.
-                            Additionally, Unity's physics system provides comprehensive control and customization options, allowing me to create engaging gameplay mechanics like 
-                            realistic vehicle physics, character animations, and physics-based puzzles. Overall, my experience with Unity's physics has been a cornerstone in 
-                            bringing my game ideas to life with dynamic, immersive, and enjoyable interactions.</p>
-                      </li>
-                      <li>
-                        <h3><i class="fa-solid fa-terminal"></i> Scripting</h3>
-                          <p>
-                            Scripting in Unity has been the backbone of my game development journey, providing the essential tools to breathe life into my creative concepts. 
-                            Unity's scripting capabilities, predominantly through the use of C# and its extensive API, have enabled me to craft intricate and immersive gameplay 
-                            experiences. Using unity script lifecyle I managed to breath life in games, implementing intricate game logic, or creating interactive 
-                            systems that respond to user input, scripting has been the linchpin in turning my visions into interactive realities.</p>
-                      </li>
-                      <li>
-                        <h3><i class="fa-solid fa-puzzle-piece"></i> Assets</h3>
-                          <p>My experience with the Unity Asset Store has been a game-changer in my game development journey. 
-                            The Asset Store has proven to be a treasure trove of resources, offering a wide array of assets, plugins, 
-                            and tools that have significantly enriched my projects. Whether it's finding high-quality 3D models, textures, 
-                            or audio assets to enhance the visual and auditory aspects of my games, or discovering powerful plugins that streamline 
-                            complex development tasks, the Unity Asset Store has been my go-to source. I've also explored the world of pre-made scripts, shaders, 
-                            and visual effects packages, which not only saved me valuable time but also provided valuable insights into best practices and innovative 
-                            techniques. It's incredible how the Asset Store fosters collaboration and innovation within the Unity community, making it easier 
-                            to access solutions that may have otherwise taken a significant amount of time to develop from scratch.</p>
-                      </li>
-                      <li>
-                        <h3><i class="fa-solid fa-circle-nodes"></i> AI</h3>
-                          <p>My experience with Unity's AI for pathfinding, spanning both 3D and 2D environments, has been a transformative journey
-                             in game development. Unity's built-in navigation system, including NavMesh and Pathfinding, has been instrumental in creating dynamic, lifelike worlds.
-                             In 3D environments, NavMesh has proven invaluable for efficiently generating navigation meshes that allow characters and entities to navigate complex, 
-                             real-world terrain realistically. This technology simplifies the creation of AI-driven characters that can intelligently traverse the game world, 
-                             avoiding obstacles and following player-defined paths, enhancing the overall gameplay experience.</p>
-                      </li>
-                  </ul>
+                </ul>
             </div>
             <div class="content" id="portofolio">
               <h1>Portofolio</h1>
               <div class="portofolio-navigation">
-                  <a
-                    @click="toggleSteam"
-                    :class="{ active: steam }"
-                  >
-                    <h4><i class="fa-brands fa-steam"></i> STEAM</h4>
-                  </a>
-                  <a
-                    @click="toggleSketchFab"
-                    :class="{ active: sketchfab }"
-                  >
-                    <h4><i class="fa-solid fa-cube"></i> SketchFab</h4>
-                  </a>
+                <a
+                  href="https://www.rolla.app/world"
+                  target="_blank"
+                  rel="noopener"
+                  :class="{ active: sketchfab }"
+                >
+                  <h4>
+                    <i class="logo-icon"><img src="/rollaapp_logo.jpg" alt="Rolla" /></i> Rolla
+                  </h4>
+                </a>
+
+                <a @click="toggleSteam" :class="{ active: steam }">
+                  <h4><i class="fa-brands fa-steam"></i> STEAM</h4>
+                </a>
+
+                <a @click="toggleSketchFab" :class="{ active: sketchfab }">
+                  <h4><i class="fa-solid fa-cube"></i> SketchFab</h4>
+                </a>
               </div>
               <div v-if="steam" class="steam">
                 <iframe src="https://store.steampowered.com/widget/1555470/" scrolling="no" class="steam-item" frameborder="0"></iframe>
@@ -384,7 +335,7 @@
                   <h2>Ajdin Hukić</h2>
                   <h3>IT Specialist</h3>
                   <ul style="margin: 35px 0 50px 0;">
-                      <li><strong>AGE</strong> <div>22</div></li>
+                      <li><strong>AGE</strong> <div>{{ age }}</div></li>
                       <li><strong>PHONE</strong> <div>+387 64 45 50 536</div></li>
                       <li><strong>STATUS</strong> <div>Open to work</div></li>
                       <li><strong>EMAIL</strong> <div>ajdinhukic007@gmail.com</div> </li>
@@ -740,37 +691,53 @@ span
 .language p {
   min-height: 100px;
 }
-.portofolio-navigation{
+.portofolio-navigation {
   background-color: #16202d;
   display: flex;
   width: 100%;
   border-radius: 50px;
 }
+
 .portofolio-navigation a {
   margin-left: 35px;
-  cursor: pointer; /* Change cursor style to pointer */
+  cursor: pointer;
   color: #fff;
   text-decoration: none;
   position: relative;
 }
+
 .portofolio-navigation h4 {
-  padding: 5px 15px 5px 15px; /* Increase padding for visual feedback */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 15px;
   margin: 10px auto;
 }
 
-.portofolio-navigation a.active h4{
-  background-color: #178387; /* Background color for the active link */
-  border-radius: 15px; /* Add rounded corners to the active link */
+.portofolio-navigation h4 i {
+  display: flex;
+  align-items: center;
 }
 
-.portofolio-navigation a.active:hover h4{
-  background-color: #178387; /* Maintain background color on hover */
+.portofolio-navigation i img {
+  height: 20px;
+  width: auto;
+  display: block;
 }
 
-.portofolio-navigation a:hover h4{
-  cursor: pointer; /* Change cursor style to pointer on hover */
+.portofolio-navigation a.active h4 {
+  background-color: #178387;
+  border-radius: 15px;
+}
+
+.portofolio-navigation a.active:hover h4 {
+  background-color: #178387;
+}
+
+.portofolio-navigation a:hover h4 {
   color: #68e0cf;
 }
+
 .sketchfab-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
