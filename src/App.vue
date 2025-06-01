@@ -281,7 +281,6 @@
                   href="https://www.rolla.app/world"
                   target="_blank"
                   rel="noopener"
-                  :class="{ active: sketchfab }"
                 >
                   <h4>
                     <i class="logo-icon"><img src="/rollaapp_logo.jpg" alt="Rolla" /></i> Rolla
