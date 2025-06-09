@@ -873,6 +873,24 @@ input[type=submit]:hover {
   min-height: 70px;
 }
 @media (max-width: 960px) {
+   .portofolio-navigation {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+
+  .portofolio-navigation a {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .portofolio-navigation h4 {
+    justify-content: center;
+    margin: 5px auto;
+    padding: 8px 15px;
+  }
   .right-div {
   width: 100%;
 }
