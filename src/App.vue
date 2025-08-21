@@ -39,7 +39,7 @@
                 <h1>
                   About me
                 </h1>
-                <h3 style="color: #68e0cf;">My story</h3>
+                <h3 style="color: #ff6b35;">My story</h3>
                 <div style="display: flex;">
                   <p>
                     Gamer from young age. Started tinkering with programming and game modifications
@@ -108,9 +108,9 @@
                       <li>
                         <h2>English</h2>
                         <p>Fluent in english. I started learning at age of 9. I learned english in school, by using web and by playing games. I went on international university, where lessons are on english.</p>
-                        <div class="label">100%</div>
+                        <div class="label" style="width: 90%">90%</div>
                         <div class="percentage-bar">
-                        <div class="filler" style="width: 100%;"></div>
+                        <div class="filler" style="width: 90%;"></div>
                         </div>
                       </li>
                       <li>
@@ -124,18 +124,10 @@
                       <li>
                         <h2>German</h2>
                         <p>Intermediate level. I started learning at age of 11. I learned it in primary and high school. I should have knowledge of B1-B2 level.</p>
-                        <div class="label" style="width: 60%;">60%</div>
-                        <div class="percentage-bar">
-                        <div class="filler" style="width: 60%;"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <h2>Latin</h2>
-                        <p>I had latin as subject for 2 years in school. I am able to make sentences and undestand what is written.</p>
                         <div class="label" style="width: 40%;">40%</div>
                         <div class="percentage-bar">
                         <div class="filler" style="width: 40%;"></div>
-                      </div>
+                        </div>
                       </li>
                   </ul>
             </div>
@@ -144,79 +136,104 @@
                   Programming
                 </h1>
                 <ul class="gridthree language">
-                      <li>
-                        <span class="programming c-sharp" ></span>
-                        <ve-progress :progress="90" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">90%</span></ve-progress>
-                        <h3>C#</h3>
-                        <p>My experience with C# revolves around Unity, where I've developed proficiency over several years. It has been integral in creating gameplay mechanics and immersive 3D and 2D environments.</p>
-                      </li>
-                      <li>
-                        <span class="programming"></span>
-                        <ve-progress :progress="63" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">63%</span></ve-progress>
-                        <h3>Python</h3>
-                        <p>I learned it and used it all over the place from hobby,high school to university. My senior design project was keylogger. It was mainly client sided pyhton app to capture user data.</p>
-                      </li>
-                      <li>
-                        <span class="programming php"  ></span>
-                        <ve-progress :progress="65" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">65%</span></ve-progress>
-                        <h3>PHP</h3>
-                        <p>I started thinkering with while making web sites and game panels for game servers of various games. Expanded knowledge in university to build back-end with FlightPHP</p>
-                      </li>
-                      <li>
-                        <span class="programming cpp"  ></span>
-                        <ve-progress :progress="40" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">40%</span></ve-progress>
-                        <h3>C++</h3>
-                        <p>I went on some courses. Later I learned it for a year in high school, making from simple programs to animated graphics.</p>
-                      </li>
-                      <li>
-                        <span class="programming javascript"  ></span>
-                        <ve-progress :progress="80" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">80%</span></ve-progress>
-                        <h3>JavaScript</h3>
-                        <p>Long joureny of learning. Started learning it in my early days for web development, used it through whole my "short" career with various frameworks, etc..</p>
-                      </li>
-                      <li>
-                        <span class="programming java"  ></span>
-                        <ve-progress :progress="55" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">55%</span></ve-progress>
-                        <h3>Java</h3>
-                        <p>Used in university a lot. For object-oriented programming course, writing JUNIT tests(selenium), algoritms and structures, mobile apps in android studio and more...</p>
-                      </li>
-                      <li>
-                        <span class="programming clang"  ></span>
-                        <ve-progress :progress="40" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">40%</span></ve-progress>
-                        <h3>C</h3>
-                        <p>I learned it in university. I know basic concepts, pointers, reading from files writing to files etc...</p>
-                      </li>
-                      <li>
-                        <span class="programming octave"  ></span>
-                        <ve-progress :progress="35" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">35%</span></ve-progress>
-                        <h3>Octave</h3>
-                        <p>I used it for machine learning course in university. I know to process data and use it for mostly basic machine learning.</p>
-                      </li>
-                      <li>
-                        <span class="programming sql"  ></span>
-                        <ve-progress :progress="80" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">80%</span></ve-progress>
-                        <h3>SQL</h3>
-                        <p>I learned basics in high school and by myself. Later on used extenstivly through university. I know to write complex queryes, functions, triggers, routines etc..</p>
-                      </li>
-                      <li>
-                        <span class="programming go"  ></span>
-                        <ve-progress :progress="30" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">30%</span></ve-progress>
-                        <h3>Go</h3>
-                        <p>I got assigned to make a game in Go in course programming languages at university. I know basic things about it.</p>
-                      </li>
-                      <li>
-                        <span class="programming node"  ></span>
-                        <ve-progress :progress="50" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">50%</span></ve-progress>
-                        <h3>Node.js</h3>
-                        <p>I learned how to use it developing a RAGE:MP(GTA V MP modification) game server. Node.js is used as server side scripting.</p>
-                      </li>
-                      <li>
-                        <span class="programming vue"  ></span>
-                        <ve-progress :progress="65" color="#68e0cf" :size="100" emptyColor="#003f86" fontColor="#68e0cf"><span class="value">65%</span></ve-progress>
-                        <h3>Vue.js</h3>
-                        <p>Also I learned vue.js developing RAGE:MP game server. Vue.js is used in custom browser as overlay for player interaction with server</p>
-                      </li>
+                    <li>
+                      <span class="programming c-sharp"></span>
+                      <ve-progress :progress="90" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">90%</span>
+                      </ve-progress>
+                      <h3>C#</h3>
+                      <p>My experience with C# revolves around Unity, where I've developed proficiency over several years. It has been integral in creating gameplay mechanics and immersive 3D and 2D environments.</p>
+                    </li>
+                    <li>
+                      <span class="programming"></span>
+                      <ve-progress :progress="63" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">63%</span>
+                      </ve-progress>
+                      <h3>Python</h3>
+                      <p>I learned it and used it all over the place from hobby, high school to university. My senior design project was keylogger. It was mainly client sided python app to capture user data.</p>
+                    </li>
+                    <li>
+                      <span class="programming php"></span>
+                      <ve-progress :progress="65" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">65%</span>
+                      </ve-progress>
+                      <h3>PHP</h3>
+                      <p>I started tinkering with it while making web sites and game panels for game servers of various games. Expanded knowledge in university to build back-end with FlightPHP</p>
+                    </li>
+                    <li>
+                      <span class="programming cpp"></span>
+                      <ve-progress :progress="40" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">40%</span>
+                      </ve-progress>
+                      <h3>C++</h3>
+                      <p>I went on some courses. Later I learned it for a year in high school, making from simple programs to animated graphics.</p>
+                    </li>
+                    <li>
+                      <span class="programming javascript"></span>
+                      <ve-progress :progress="80" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">80%</span>
+                      </ve-progress>
+                      <h3>JavaScript</h3>
+                      <p>Long journey of learning. Started learning it in my early days for web development, used it through whole my "short" career with various frameworks, etc..</p>
+                    </li>
+                    <li>
+                      <span class="programming java"></span>
+                      <ve-progress :progress="55" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">55%</span>
+                      </ve-progress>
+                      <h3>Java</h3>
+                      <p>Used in university a lot. For object-oriented programming course, writing JUNIT tests (selenium), algorithms and structures, mobile apps in android studio and more...</p>
+                    </li>
+                    <li>
+                      <span class="programming clang"></span>
+                      <ve-progress :progress="40" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">40%</span>
+                      </ve-progress>
+                      <h3>C</h3>
+                      <p>I learned it in university. I know basic concepts, pointers, reading from files, writing to files etc...</p>
+                    </li>
+                    <li>
+                      <span class="programming octave"></span>
+                      <ve-progress :progress="35" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">35%</span>
+                      </ve-progress>
+                      <h3>Octave</h3>
+                      <p>I used it for machine learning course in university. I know to process data and use it for mostly basic machine learning.</p>
+                    </li>
+                    <li>
+                      <span class="programming sql"></span>
+                      <ve-progress :progress="80" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">80%</span>
+                      </ve-progress>
+                      <h3>SQL</h3>
+                      <p>I learned basics in high school and by myself. Later on used extensively through university. I know to write complex queries, functions, triggers, routines etc..</p>
+                    </li>
+                    <li>
+                      <span class="programming go"></span>
+                      <ve-progress :progress="30" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">30%</span>
+                      </ve-progress>
+                      <h3>Go</h3>
+                      <p>I got assigned to make a game in Go in course programming languages at university. I know basic things about it.</p>
+                    </li>
+                    <li>
+                      <span class="programming node"></span>
+                      <ve-progress :progress="50" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">50%</span>
+                      </ve-progress>
+                      <h3>Node.js</h3>
+                      <p>I learned how to use it developing a RAGE:MP (GTA V MP modification) game server. Node.js is used as server side scripting.</p>
+                    </li>
+                    <li>
+                      <span class="programming vue"></span>
+                      <ve-progress :progress="65" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                        <span class="value">65%</span>
+                      </ve-progress>
+                      <h3>Vue.js</h3>
+                      <p>Also I learned vue.js developing RAGE:MP game server. Vue.js is used in custom browser as overlay for player interaction with server</p>
+                    </li>
                   </ul>
+
             </div>
             <div class="content" id="unity">
                 <h1>
@@ -413,6 +430,20 @@ export default {
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+
+:root{
+  /* Solar Ember theme - deep night + ember accents */
+  --bg: #0b1020;          /* page background (deep navy) */
+  --panel: #0f141b;       /* content panels / containers */
+  --accent: #ff6b35;      /* ember orange (primary accent) */
+  --gold: #f3a712;        /* secondary warm accent */
+  --muted: #6b7280;       /* borders / subtle text */
+  --text: #f5f2ee;        /* primary text (warm off-white) */
+  --glass: rgba(255,107,53,0.06);
+  --glass-2: rgba(243,167,18,0.04);
+  --filler: #ff8a57;      /* progress filler */
+}
+
 .left-div .group {
   position: absolute;
   bottom: 3%;
@@ -429,10 +460,11 @@ export default {
   height: 30px;
   width: 30px;
   margin: 15px;
-  color: #002642;
-  border: 2px solid #002642;
+  color: var(--text);
+  border: 2px solid var(--text);
   padding: 10px;
   border-radius: 50%;
+  background: transparent;
 }
 .left-div .element i {
   display: flex;
@@ -440,12 +472,12 @@ export default {
 }
 
 .left-div .element:hover {
-  color: #68e0cf;
-  border: 2px solid #68e0cf;
+  color: var(--accent);
+  border: 2px solid var(--accent);
   cursor: pointer;
 }
 .ve-progress .value {
-  color: #68e0cf; /* Change this to the desired font color */
+  color: var(--accent); /* progress label color */
 }
 .empty{
   height: 150px; 
@@ -455,7 +487,7 @@ export default {
   border-bottom: none !important; 
 }
 .name {
-  color: #ffffff;
+  color: var(--text);
   font-size: 4.5em;
   line-height: 1.2;
   font-weight: 800;
@@ -463,17 +495,18 @@ export default {
 .ballon{
   z-index: 99;
   width: 400px;
-  height: 349px;
+  height: 400px;
   margin-left: -15em;
-  background-color: #002642;
+  background-color: var(--bg);
   border-radius: 322px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: -1rem 0 15px rgba(7, 6, 6, 0.3);
 }
 .container{
-  background-color: #002642;
+  background-color: var(--bg);
 }
 .left-div {
   background-image: url('./assets/img.webp');
@@ -483,27 +516,28 @@ export default {
   position: fixed;
   left: 0;
   top: 0;
-  width: 50%;
+  width: 30%;
   height: 100%;
+  filter: saturate(0.9) brightness(0.85) contrast(1.05);
 }
 
 .right-div {
-    margin-left: 50%;
-    background-color: #002642;
-    width: 48%;
-    border-right: 1px solid #585d65;
+    margin-left: 28%;
+    background-color: var(--bg);
+    width: 69%;
+    border-right: 1px solid var(--muted);
 }
 
 
 .content {
-  background-color: #002642;
+  background-color: transparent;
   padding-left: 8%;
   padding-right: 8%;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   margin: 0 auto;
-  border-bottom: 1px solid #585d65;
+  border-bottom: 1px solid rgba(107,114,128,0.12);
   padding-bottom: 30px;
 }
 
@@ -511,13 +545,14 @@ body {
   display: block;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
+  background: var(--bg);
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ffffff;
+  color: var(--text);
   margin-top: 60px;
   display: contents;
 }
@@ -527,7 +562,7 @@ p{
   line-height: 26px;
   margin: 0 0 30px 0;
   font-size: 14px;
-  color: #fff;
+  color: var(--text);
   font-family: "Poppins";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -536,12 +571,12 @@ p{
 h1{
   font-size: 2.5em;
   line-height: 1.2;
-  color: #FFF;
+  color: var(--text);
   font-weight: 800;
 }
 h3{
   line-height: 1.2;
-  color: #68e0cf;
+  color: var(--accent);
   font-weight: 600;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -570,16 +605,16 @@ strong {
   width: 90px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #68e0cf;
+  color: var(--accent);
 }
 span
 {
-  color: #fff;
+  color: var(--text);
 }
 .date{
   display: flex;
   font-size: 11px;
-  color: #68e0cf;
+  color: var(--gold);
   font-weight: 600;
   transform-origin: bottom left;
   transform: rotate(90deg);
@@ -588,7 +623,7 @@ span
   text-align: left;
   margin: 0 0 30px 30px;
   font-size: 18px;
-  color: #FFF;
+  color: var(--text);
   font-weight: 800;
 }
 .item {
@@ -607,37 +642,38 @@ span
 }
 
 .slider::-webkit-scrollbar-thumb {
-  background: #003961; 
+  background: rgba(0,0,0,0.45);
   border-radius: 25px; 
+  border: 2px solid rgba(255,107,53,0.06);
 }
 
 .slider {
   width: 100%;
   scrollbar-width: thin;
-  scrollbar-color: #0011ff transparent;
+  scrollbar-color: rgba(0,0,0,0.45) transparent;
 }
 .percentage-bar {
   height: 5px;
-  background: #003f86;
+  background: rgba(107,114,128,0.12);
   position: relative;
   border-radius: 10px;
 }
 
 .filler {
   height: 100%;
-  background-color: #68e0cf; /* Change this color as needed */
+  background-color: var(--filler); /* progress filler */
   border-radius: 10px;
 }
 
 .label {
   text-align: end;
-  color: #68e0cf;
+  color: var(--accent);
 }
 .language{
   grid-gap: 25px;
 }
 .value{
-  color: #68e0cf;
+  color: var(--accent);
 }
 .programming{
   display: inline-flex;
@@ -648,6 +684,7 @@ span
   margin: 0 20px 0 0;
   background-size: contain;
   background-position: center;
+  filter: saturate(0.9) brightness(0.95);
 }
 .c-sharp{
   background-image: url('./assets/c-sharp.webp');
@@ -691,16 +728,17 @@ span
   min-height: 100px;
 }
 .portofolio-navigation {
-  background-color: #16202d;
+  background-color: var(--panel);
   display: flex;
   width: 100%;
   border-radius: 50px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
 }
 
 .portofolio-navigation a {
   margin-left: 35px;
   cursor: pointer;
-  color: #fff;
+  color: var(--text);
   text-decoration: none;
   position: relative;
 }
@@ -725,16 +763,17 @@ span
 }
 
 .portofolio-navigation a.active h4 {
-  background-color: #178387;
+  background: linear-gradient(90deg, rgba(255,107,53,0.12), rgba(243,167,18,0.06));
   border-radius: 15px;
+  border: 1px solid rgba(255,107,53,0.14);
 }
 
 .portofolio-navigation a.active:hover h4 {
-  background-color: #178387;
+  background: linear-gradient(90deg, rgba(255,107,53,0.16), rgba(243,167,18,0.08));
 }
 
 .portofolio-navigation a:hover h4 {
-  color: #68e0cf;
+  color: var(--accent);
 }
 
 .sketchfab-grid {
@@ -746,8 +785,11 @@ span
 
 .sketchfab-embed-wrapper {
   position: relative;
-  padding-bottom: 75%; /* Maintain the aspect ratio (4:3) for Sketchfab iframes */
+  padding-bottom: 75%;
   overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,107,53,0.02), transparent);
+  border: 1px solid rgba(107,114,128,0.08);
 }
 
 .sketchfab-embed-wrapper iframe{
@@ -764,21 +806,16 @@ input[type=text], input[type=email], select, textarea {
   font-size: 14px;
   height: 64px;
   width: 100%;
-  color: #FFF;
+  color: var(--text);
   background: none !important;
-  border: 1px solid #585d65;
+  border: 1px solid rgba(107,114,128,0.12);
   resize: none;
   outline: 0;
   border-radius: 30px;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -khtml-border-radius: 30px;
   transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
 }
 input[type=text]:focus, select:focus, textarea:focus, input[type=email]:focus{
-  border: 1px solid #178387;
+  border: 1px solid var(--accent);
 
 }
 textarea{
@@ -794,9 +831,9 @@ label{
   top: -5px;
   font-size: 12px;
   line-height: 12px;
-  color: #FFF;
+  color: var(--text);
   font-weight: 800;
-  background: #002642;
+  background: var(--bg);
   text-transform: uppercase;
   z-index: 2;
 }
@@ -805,8 +842,8 @@ label{
     margin-bottom: 40px;
 }
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
+  background-color: var(--accent);
+  color: var(--text);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -822,23 +859,24 @@ button {
   line-height: 62px;
   text-align: center;
   font-size: 12px;
-  color: #FFF;
+  color: var(--text);
   font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
   background: transparent;
-  border: 1px solid #585d65;
+  border: 1px solid rgba(107,114,128,0.12);
   cursor: pointer;
   border-radius: 64px;
   transition: 1s all cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
 
 }
 button:hover{
-  color: #68e0cf;
-  border: 1px solid #68e0cf;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  box-shadow: 0 6px 18px rgba(255,107,53,0.08);
 }
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #ff824a;
 }
 .contact{
   display: grid;
@@ -850,18 +888,19 @@ input[type=submit]:hover {
 .contact-bottom{
   padding: 30px;
   float: right;
-  border: 1px solid #585d65;
+  border: 1px solid rgba(107,114,128,0.12);
   border-radius: 50px;
+  background: linear-gradient(180deg, rgba(255,107,53,0.02), transparent);
 }
 .contact-bottom h2{
   margin: 0 0 5px 0;
   font-size: 30px;
-  color: #FFF;
+  color: var(--text);
   font-weight: 800;
 }
 .contact-bottom h3{
   font-size: 11px;
-  color: #68e0cf;
+  color: var(--accent);
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -871,6 +910,7 @@ input[type=submit]:hover {
   background-repeat: no-repeat;
   width: 100%;
   min-height: 70px;
+  opacity: 0.95;
 }
 @media (max-width: 960px) {
    .portofolio-navigation {
@@ -917,6 +957,7 @@ input[type=submit]:hover {
     margin-top: -9em;
     height: 300px;
     width: 300px;
+    box-shadow: 0 -1rem 15px rgba(7, 6, 6, 0.3);
   }
   .name{
     font-size: 3.5em;
@@ -941,12 +982,12 @@ input[type=submit]:hover {
   width: 100%;
 }
 .steam-item{
-  background-color: #002642;
+  background-color: var(--bg);
   margin: 25px 0;
   width:100%;
   min-height: 190px;
 }
 .steam-item html{
-  background-color: #002642;
+  background-color: var(--bg);
 }
 </style>

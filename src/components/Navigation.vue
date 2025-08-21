@@ -54,54 +54,62 @@ methods: {
 </script>
 
 <style scoped>
+/* Updated to use Solar Ember theme variables from :root in App.vue */
 .resume{
-	border: 1px solid #fff;
+    border: 1px solid rgba(255,107,53,0.10);
     border-radius: 50px;
     padding: 10px 25px; /* Adjust the padding as needed */
-    box-sizing: border-box; /* This ensures padding doesn't affect the element's size */
-	margin: 0 auto !important;
+    box-sizing: border-box;
+    margin: 0 auto !important;
+    background: linear-gradient(90deg, rgba(255,107,53,0.04), transparent);
 }
 .resume i {
-  margin-left: 10px; /* Add margin between "Resume" and the download icon */
+  margin-left: 10px;
+  color: var(--text);
 }
 .navbar {
-	position: fixed; /* Make the navbar fixed at the top */
-	top: 50px; /* Stick it to the top of the viewport */
-	left: 0;
-	right: 0;
-	z-index: 1000;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #178387;
-	color: white;
-	width: 90%;
-	padding: 10px 20px;
-	border-radius: 50px;
-	margin: 0 auto; 
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 50px; /* Stick it to the top of the viewport */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--text);
+    width: 90%;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, rgba(107, 114, 128, 0.5), transparent);
+	border: 1px solid rgba(255,107,53,0.10);
+    border-radius: 50px;
+    margin: 0 auto; 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.45);
 }
 .left {
-	display: flex;
-	align-items: center;
-	margin-left: 2%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
 }
 
 .logo {
     background-image: url(/src/assets/logo.webp);
     min-width: 40px;
-	height: 40px;
+    height: 40px;
     background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(1.05) saturate(0.9);
 }
 
 .name {
-	display: flex;
-	flex-direction: column;
-	font-size: 16px;
-	font-weight: 900;
-	text-align: left;
-	margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 15%;
+    color: var(--text);
 }
 
 .right {
@@ -113,34 +121,33 @@ align-items: center;
     display: flex;
     list-style: none;
     transition: transform 0.3s ease-in-out;
-
     align-items: center; /* Vertically center the links */
 }
 
 .links a {
-	line-height: 16px;
-	font-size: 12px;
-	font-weight: 800;
-	text-transform: uppercase;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
     display: flex; /* Allow vertical centering */
     align-items: center; /* Vertically center the text */
+    color: var(--text);
+    text-decoration: none;
 }
 .links a:hover{
-	color: #68e0cf;
+    color: var(--accent);
 }
 .links a:hover{
-	border-color: #68e0cf;
+    border-color: var(--accent);
 }
 
 .links.active {
-	display: flex;
+    display: flex;
 }
 
 .links a {
-	color: white;
-	text-decoration: none;
-	margin: auto 20px;
-	font-size: 16px;
+    margin: auto 20px;
+    font-size: 16px;
 }
 
 .hamburger-menu {
@@ -150,7 +157,7 @@ cursor: pointer;
 }
 
 .bar {
-background-color: white;
+background-color: var(--text);
 height: 3px;
 width: 25px;
 margin: 2px 0;
@@ -159,18 +166,20 @@ margin: 2px 0;
   display: none;
   position: absolute;
   z-index: 1;
+  background-color: rgba(15,20,27,0.95);
+  border-radius: 6px;
+  border: 1px solid rgba(107,114,128,0.08);
 }
 .dropdown-content a:hover {
-  background-color: #6a6b6d;
+  background-color: rgba(255,107,53,0.06);
 }
 .dropdown-content a {
   float: none;
-  color: black;
+  color: var(--text);
   margin: 0 auto;
   padding: 12px 16px;
   text-decoration: none;
-  background-color: #585d65;
-  color: #fff;
+  background-color: transparent;
   display: block;
   text-align: left;
 }
@@ -178,61 +187,65 @@ margin: 2px 0;
   display: block;
 }
 .dropdown{
-	display: block;
+    display: block;
 }
 .dropdown-link-mobile{
-	display: none !important;
+    display: none !important;
 }
 @media (max-width: 860px) {
-	.navbar{
-		width: 80%;
-	}
-	
+    .navbar{
+        width: 80%;
+    }
+    
 }
 @media (max-width: 680px) {
-	.navbar{
-		width: 80%;
-		position: absolute;
-	}
-	
+    .navbar{
+        width: 80%;
+        position: absolute;
+    }
+    
 }
 @media (max-width: 1250px) {
-	.resume{
-		border: none;
-	}
-	.name {
-		font-size: 14px;
-	}
+    .resume{
+        padding: 5px;
+    }
+    .name {
+        font-size: 14px;
+    }
 
-	.links {
-		flex-direction: column;
-		background-color: #585d65;
-		position: absolute;
-		top: 60px;
-		z-index: 1;
-		display: none;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
-	}
+    .links {
+        flex-direction: column;
+        background: linear-gradient(180deg, rgba(107, 114, 128, 0.5), transparent);
+        border: 1px solid rgba(255,107,53,0.10);
+        border-radius: 0px 0px 15px 15px;
+        border-top: 0px;
+        position: absolute;
+        top: 60px;
+        z-index: 1;
+        padding: 5px;
+        display: none;
+    }
 
-	.hamburger-menu {
-		display: flex;
-	}
+    .hamburger-menu {
+        display: flex;
+    }
 
-	.links.active {
-		right: 0;
-	}
-	.navbar.active {
-		border-bottom-right-radius: 0px;
-	}
-	.links a {
-		padding: 10px 0;
-	}
-	.dropdown{
-		display: none;
-	}
-	.dropdown-link-mobile{
-		display: block !important;
-	}
+    .links.active {
+        right: 0;
+        display: flex;
+    }
+    .navbar.active {
+        border-bottom-right-radius: 0px;
+    }
+    .links a {
+        padding: 10px 10px;
+    }
+    .dropdown{
+        display: none;
+    }
+    .dropdown-link-mobile{
+        display: block !important;
+        color: var(--text);
+    }
 }
 </style>
