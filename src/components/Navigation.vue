@@ -2,10 +2,7 @@
 	<nav class="navbar" :class="{ 'active': isMenuOpen }">
 	  <div class="left">
 		<div class="logo"></div>
-		<div class="name">
-		  <div class="first-name" >Ajdin</div>
-		  <div class="last-name"  >Hukić</div>
-		</div>
+
 	  </div>
 	  <div class="right">
 		<div class="links" :class="{ 'active': isMenuOpen }">
@@ -68,7 +65,7 @@ methods: {
   color: var(--text);
 }
 .navbar {
-    position: fixed; /* Make the navbar fixed at the top */
+    position: absolute; /* Make the navbar fixed at the top */
     top: 50px; /* Stick it to the top of the viewport */
     left: 0;
     right: 0;
@@ -76,15 +73,14 @@ methods: {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     color: var(--text);
     width: 90%;
     padding: 10px 20px;
-    background: linear-gradient(45deg, rgba(107, 114, 128, 0.5), transparent);
-	border: 1px solid rgba(255,107,53,0.10);
+    border: 1px solid rgb(243, 167, 18, 0.7);
+    background: rgba(13,18,30,0.5);
+    backdrop-filter: blur(10px) saturate(1.1);
     border-radius: 50px;
     margin: 0 auto; 
-    box-shadow: 0 8px 24px rgba(0,0,0,0.45);
 }
 .left {
     display: flex;

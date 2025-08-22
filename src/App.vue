@@ -16,53 +16,46 @@
           </div>
         </div>
         <div class="right-div">
-            <div class="content empty">
-            </div>
-            <div class="content balloncontainer">
-                <div class="ballon">
-                  <div class="name">AJDIN</div>
-                    <div class="name">HUKIĆ</div>
-                </div>
-            </div>
             <div class="content">
-                <p style="margin-top: 30px;">
-                  Highly motivated and skilled IT
-                  specialist with a passion for
-                  programming and game development.
-                  I am looking for a challenging position
-                  to use my strong technical skills and
-                  experience in web development,
-                  programming, and game design.
-                </p>
-            </div>
-            <div class="content" id="about">
-                <h1>
-                  About me
-                </h1>
-                <h3 style="color: #ff6b35;">My story</h3>
-                <div style="display: flex;">
-                  <p>
-                    Gamer from young age. Started tinkering with programming and game modifications
-                    for various multiplayer games.
-                  </p>
-                  <p style="margin-left: 50px;">
-                    Learned how to make multiplayer servers and scripts for them. Make 3d models, maps, animations for game mods.
-                  </p>
+              <div class="balloncontainer">
+                <div class="ballon" aria-hidden="true">
+                  <div class="name">AJDIN</div>
+                  <div class="name">HUKIĆ</div>
                 </div>
-                <p>
-                    In primary school went to competitive programming competitions, got golden gear as the one of the best technology related student in country. 
-                    Continued with programming in high school and was the best in class of programming. Started learning unity in high school and also 3d modelling and 3d animation.
-                    Worked on various things, programming languages. Passionate for technology and engineering.
-                </p>
+
+                <div class="content-inner">
+                  <h1>About me</h1>
+                  <p>
+                    Highly motivated and skilled IT specialist with a passion for programming and game development.
+                    I am looking for a challenging position to use my strong technical skills and experience in web development,
+                    programming, and game design.
+                  </p>
+
+                  <h3>My story</h3>
+                  <div class="story-columns">
+                    <p>
+                      Gamer from young age. Started tinkering with programming and game modifications for various multiplayer games.
+                    </p>
+                    <p>
+                      Learned how to make multiplayer servers and scripts for them. Made 3D models, maps, animations for game mods.
+                    </p>
+                  </div>
+
+                  <p>
+                    In primary school went to competitive programming competitions, got golden gear as one of the best technology-related students in the country.
+                    Continued programming in high school and started learning Unity, 3D modelling and animation.
+                  </p>
+
                   <ul class="grid">
-                      <li><strong>AGE</strong> {{ age }}</li>
-                      <li><strong>PHONE</strong> +387 64 45 50 536</li>
-                      <li><strong>STATUS</strong> Open to work</li>
-                      <li><strong>EMAIL</strong> ajdinhukic007@gmail.com</li>
-                      <li><strong>RESIDENCE</strong> Zenica, BA</li>
+                    <li><strong>AGE</strong> {{ age }}</li>
+                    <li><strong>PHONE</strong> +387 64 45 50 536</li>
+                    <li><strong>STATUS</strong> Open to work</li>
+                    <li><strong>EMAIL</strong> ajdinhukic007@gmail.com</li>
+                    <li><strong>RESIDENCE</strong> Zenica, BA</li>
                   </ul>
+                </div>
+              </div>
             </div>
-          
             <div class="content" id="experience">
                 <h1>
                   Experience
@@ -138,7 +131,7 @@
                 <ul class="gridthree language">
                     <li>
                       <span class="programming c-sharp"></span>
-                      <ve-progress :progress="90" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="90" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">90%</span>
                       </ve-progress>
                       <h3>C#</h3>
@@ -146,7 +139,7 @@
                     </li>
                     <li>
                       <span class="programming"></span>
-                      <ve-progress :progress="63" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="63" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">63%</span>
                       </ve-progress>
                       <h3>Python</h3>
@@ -154,7 +147,7 @@
                     </li>
                     <li>
                       <span class="programming php"></span>
-                      <ve-progress :progress="65" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="65" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">65%</span>
                       </ve-progress>
                       <h3>PHP</h3>
@@ -162,7 +155,7 @@
                     </li>
                     <li>
                       <span class="programming cpp"></span>
-                      <ve-progress :progress="40" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="40" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">40%</span>
                       </ve-progress>
                       <h3>C++</h3>
@@ -170,7 +163,7 @@
                     </li>
                     <li>
                       <span class="programming javascript"></span>
-                      <ve-progress :progress="80" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="80" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">80%</span>
                       </ve-progress>
                       <h3>JavaScript</h3>
@@ -178,7 +171,7 @@
                     </li>
                     <li>
                       <span class="programming java"></span>
-                      <ve-progress :progress="55" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="55" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">55%</span>
                       </ve-progress>
                       <h3>Java</h3>
@@ -186,7 +179,7 @@
                     </li>
                     <li>
                       <span class="programming clang"></span>
-                      <ve-progress :progress="40" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="40" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">40%</span>
                       </ve-progress>
                       <h3>C</h3>
@@ -194,7 +187,7 @@
                     </li>
                     <li>
                       <span class="programming octave"></span>
-                      <ve-progress :progress="35" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="35" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">35%</span>
                       </ve-progress>
                       <h3>Octave</h3>
@@ -202,7 +195,7 @@
                     </li>
                     <li>
                       <span class="programming sql"></span>
-                      <ve-progress :progress="80" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="80" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">80%</span>
                       </ve-progress>
                       <h3>SQL</h3>
@@ -210,7 +203,7 @@
                     </li>
                     <li>
                       <span class="programming go"></span>
-                      <ve-progress :progress="30" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="30" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">30%</span>
                       </ve-progress>
                       <h3>Go</h3>
@@ -218,7 +211,7 @@
                     </li>
                     <li>
                       <span class="programming node"></span>
-                      <ve-progress :progress="50" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="50" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">50%</span>
                       </ve-progress>
                       <h3>Node.js</h3>
@@ -226,7 +219,7 @@
                     </li>
                     <li>
                       <span class="programming vue"></span>
-                      <ve-progress :progress="65" color="var(--filler)" :size="100" emptyColor="var(--panel)" fontColor="var(--filler)">
+                      <ve-progress :progress="65" color="var(--accent)" :size="100" emptyColor="var(--panel)" fontColor="var(--accent)">
                         <span class="value">65%</span>
                       </ve-progress>
                       <h3>Vue.js</h3>
@@ -362,7 +355,6 @@
               </ul>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -431,19 +423,173 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
 
-:root{
-  /* Solar Ember theme - deep night + ember accents */
-  --bg: #0b1020;          /* page background (deep navy) */
-  --panel: #0f141b;       /* content panels / containers */
-  --accent: #ff6b35;      /* ember orange (primary accent) */
-  --gold: #f3a712;        /* secondary warm accent */
-  --muted: #6b7280;       /* borders / subtle text */
-  --text: #f5f2ee;        /* primary text (warm off-white) */
-  --glass: rgba(255,107,53,0.06);
-  --glass-2: rgba(243,167,18,0.04);
-  --filler: #ff8a57;      /* progress filler */
+:root {
+  /* New creative gradient + glass palette */
+  --bg: #070814; /* deep base */
+  --content-bg: #08111b; /* deep base */
+  --bg-gradient: linear-gradient(180deg, #071021 0%, #0b1524 50%, #08111b 100%);
+  --bg-orb-1: radial-gradient(600px 300px at 8% 12%, rgba(255,107,53,0.04), transparent 12%);
+  --bg-orb-2: radial-gradient(600px 300px at 88% 82%, rgba(104,196,194,0.02), transparent 12%);
+
+  --panel-glass: rgba(255,255,255,0.03);   /* translucent panel fill */
+  --panel-strong: rgba(13,18,30,0.75);
+  --glass-border: rgba(255,107,53,0.06);
+  --glass-shadow: 0 18px 50px rgba(2,6,23,0.65);
+  --accent-grad: linear-gradient(90deg, #ff6b35 0%, #f3a712 70%);
+  --accent-grad-ballon: linear-gradient(90deg, #ff6b35 0%, #ff6b35 100%);
+  --accent-grad-ballon-top: linear-gradient(90deg, #ff6b35 30%, #f3a712 90%);
+  --accent: #ff6b35;
+  --accent-2: #f3a712;
+  --muted: #94a0b1;
+  --text: #eef2f6;
+  --filler-grad: linear-gradient(90deg,#ff8a57,#ff6b35);
+  --glass-blur: blur(8px);
 }
 
+/* page background with soft orbital gradients */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-gradient);
+  background-image: var(--bg-orb-1), var(--bg-orb-2), var(--bg-gradient);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* lightweight helper class for glass panels */
+.panel-glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(8px) saturate(120%);
+  box-shadow: var(--glass-shadow);
+  border-radius: 14px;
+}
+
+/* apply glass to main containers */
+.container { background: transparent; }
+.left-div { box-shadow: inset 0 80px 120px rgba(0,0,0,0.55); }
+
+.content {
+  position: relative;
+  text-align: left;
+  border-radius: 25px;
+  margin: 16px 24px;
+  padding: 25px 50px;
+  overflow: visible;
+  /* remove direct background here — inner panel is provided by ::after */
+}
+
+/* 1px bigger gradient wrapper (visible as a thin border) */
+.content::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: var(--accent-grad);
+  border-radius: calc(25px + 1px);
+  z-index: 0; /* behind the inner panel */
+  pointer-events: none;
+  filter: blur(0.6px);
+}
+
+/* inner glass panel that contains the actual background / blur */
+.content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  background: var(--content-bg);
+  backdrop-filter: blur(6px) saturate(110%);
+  box-shadow: var(--glass-shadow);
+  z-index: 1; /* sits above the gradient border but below content */
+  pointer-events: none;
+}
+
+/* real content must sit above the pseudo layers */
+.content > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* remove any global rule that forces .content background to the gradient.
+   If you have a duplicate .content { background: var(--accent-grad); } remove it. */
+
+/* ballon + container: keep balloon as a left column, no absolute overlap */
+.balloncontainer {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* names inside bubble */
+.name {
+  color: var(--text);
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 8px 20px rgba(2,6,23,0.6);
+}
+
+/* headings accent underline using accent gradient */
+h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 88px;
+  margin-top: 14px;
+  border-radius: 6px;
+  background: var(--accent-grad);
+  box-shadow: 0 8px 26px rgba(255,107,53,0.08);
+}
+
+/* subtle card accents */
+.card-accent {
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006));
+  border: 1px solid rgba(255,255,255,0.03);
+  backdrop-filter: blur(6px);
+}
+
+/* buttons / cta */
+button, .cta {
+  background: var(--accent-grad);
+  color: #071016;
+  border: 0;
+  padding: 12px 22px;
+  border-radius: 999px;
+  box-shadow: 0 14px 36px rgba(255,107,53,0.08);
+  font-weight: 800;
+}
+button:hover, .cta:hover {
+  transform: translateY(-3px);
+}
+
+/* inputs */
+input[type=text], input[type=email], textarea {
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.006));
+  border: 1px solid rgba(255,255,255,0.03);
+  backdrop-filter: blur(6px);
+  color: var(--text);
+}
+
+/* small screens: stack and reduce bubble size */
+@media (max-width: 980px) {
+  .balloncontainer { flex-direction: column; align-items:center; gap:18px; }
+  .ballon { width: 260px; height: 260px; }
+  .name { font-size: 2.2rem; }
+}
+
+/* utilities */
+.muted { color: var(--muted); }
+.kv-underline { height: 3px; width: 48px; background: var(--accent-grad); border-radius: 6px; margin-top: 8px; }
 .left-div .group {
   position: absolute;
   bottom: 3%;
@@ -480,31 +626,120 @@ export default {
   color: var(--accent); /* progress label color */
 }
 .empty{
-  height: 150px; 
-  border-bottom: none !important;
+  height: 50px; 
+  border: none !important;
+  background-color: transparent !important;
+}
+.empty::before{
+    backdrop-filter: blur(0px) saturate(0%);
+    box-shadow: none !important;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 25px;
+    background:  none !important;
+}
+.empty::after{
+  border: none !important;
+  background-color: transparent !important;
 }
 .balloncontainer{
-  border-bottom: none !important; 
+  /* keep container in normal flow and lay out ballon next to text */
+  display: flex !important;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: nowrap;
+  padding: 8px 0;
 }
-.name {
+
+
+.ballon {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  height: 400px;
+  flex: 0 0 auto;
+  margin-left: -15.65em;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  margin-right: 4rem;
+}
+
+.ballon::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  /* how much of the left side the accent covers — increase to make it thicker */
+  --left-accent-width: calc(50% + 2px);
+  width: var(--left-accent-width);
+  background: var(--accent-grad-ballon);
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 0; /* behind the inner panel */
+  pointer-events: none;
+}
+
+/* inner glass panel that covers most of the balloon and hides the bulk of the ::before,
+   leaving only a left-side accent visible (gives the effect of a 1px gradient border on the left) */
+.ballon::after {
+  content: "";
+  position: absolute;
+  /* nudge the inner panel 1px to the right so a sliver of the ::before remains visible */
+  top: 0;
+  left: 1px;
+  right: 0;
+  bottom: 0;
+  border-radius: 999px;
+  background: var(--content-bg);
+  z-index: 1; /* above ::before but below text */
+  pointer-events: none;
+}
+
+/* ensure text inside the balloon sits above the pseudo layers */
+.ballon > * { position: relative; z-index: 2; }
+
+
+/* ensure the text/content flows to the right of the balloon */
+.balloncontainer > h1,
+.balloncontainer > p,
+.balloncontainer > ul,
+.balloncontainer > div.content-inner {
+  flex: 1 1 auto;
+}
+.name{
   color: var(--text);
   font-size: 4.5em;
   line-height: 1.2;
   font-weight: 800;
 }
-.ballon{
-  z-index: 99;
-  width: 400px;
-  height: 400px;
-  margin-left: -15em;
-  background-color: var(--bg);
-  border-radius: 322px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: -1rem 0 15px rgba(7, 6, 6, 0.3);
+/* responsive: stack on small screens */
+@media (max-width: 980px) {
+  .balloncontainer {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .ballon{
+    width: 300px;
+    height: 300px;
+    margin-top: -3rem; /* preserve hero overlap/look if desired */
+    box-shadow: 0 -1rem 15px rgba(7, 6, 6, 0.3);
+  }
+  .balloncontainer > h1,
+  .balloncontainer > p,
+  .balloncontainer > ul {
+    width: 90%;
+    text-align: center;
+  }
 }
+
 .container{
   background-color: var(--bg);
 }
@@ -522,31 +757,13 @@ export default {
 }
 
 .right-div {
-    margin-left: 28%;
+    margin-left: 30%;
     background-color: var(--bg);
     width: 69%;
+    padding-top: 125px;
     border-right: 1px solid var(--muted);
 }
 
-
-.content {
-  background-color: transparent;
-  padding-left: 8%;
-  padding-right: 8%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  margin: 0 auto;
-  border-bottom: 1px solid rgba(107,114,128,0.12);
-  padding-bottom: 30px;
-}
-
-body {
-  display: block;
-  margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
-  background: var(--bg);
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -576,7 +793,7 @@ h1{
 }
 h3{
   line-height: 1.2;
-  color: var(--accent);
+  color: var(--text);
   font-weight: 600;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -661,7 +878,7 @@ span
 
 .filler {
   height: 100%;
-  background-color: var(--filler); /* progress filler */
+  background: var(--filler-grad);
   border-radius: 10px;
 }
 
@@ -948,17 +1165,37 @@ input[type=submit]:hover {
   .empty{
     display: none;
   }
+
   .balloncontainer{
     align-items: center;
     padding-bottom: 0px;
   }
-  .ballon{
+  .ballon {
     margin-left: 0;
-    margin-top: -9em;
+    margin-top: -11.48em;
     height: 300px;
     width: 300px;
-    box-shadow: 0 -1rem 15px rgba(7, 6, 6, 0.3);
   }
+
+.ballon::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: -1px;
+  height: calc(50% + 1px);
+  width: calc(100% + 1px);
+  background: var(--accent-grad-ballon-top);
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 0;
+  z-index: 0; /* behind the inner panel */
+  pointer-events: none;
+}
+
+/* inner glass panel that covers most of the balloon and hides the bulk of the ::before,
+   leaving only a left-side accent visible (gives the effect of a 1px gradient border on the left) */
   .name{
     font-size: 3.5em;
   }
