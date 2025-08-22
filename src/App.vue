@@ -286,25 +286,35 @@
             </div>
             <div class="content" id="portofolio">
               <h1>Portofolio</h1>
+
+              <!-- updated navigation: Rolla toggles embedded video view (not external nav) -->
               <div class="portofolio-navigation">
-                <a
-                  href="https://www.rolla.app/world"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <h4>
-                    <i class="logo-icon"><img src="/rollaapp_logo.jpg" alt="Rolla" /></i> Rolla
-                  </h4>
+                <a @click.prevent="toggleRolla" :class="{ active: rolla }" role="button">
+                  <h4><i class="logo-icon"><img src="/rollaapp_logo.jpg" alt="Rolla" /></i> Rolla</h4>
                 </a>
 
-                <a @click="toggleSteam" :class="{ active: steam }">
+                <a @click.prevent="toggleSteam" :class="{ active: steam }" role="button">
                   <h4><i class="fa-brands fa-steam"></i> STEAM</h4>
                 </a>
 
-                <a @click="toggleSketchFab" :class="{ active: sketchfab }">
+                <a @click.prevent="toggleSketchFab" :class="{ active: sketchfab }" role="button">
                   <h4><i class="fa-solid fa-cube"></i> SketchFab</h4>
                 </a>
               </div>
+
+              <!-- new: Rolla video embed (shows when rolla is true) -->
+              <div v-if="rolla" class="video-embed">
+                <div class="video-wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/25lxAc927Nw?rel=0&modestbranding=1"
+                    title="Rolla - Promo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+
               <div v-if="steam" class="steam">
                 <iframe src="https://store.steampowered.com/widget/1555470/" scrolling="no" class="steam-item" frameborder="0"></iframe>
               </div>
@@ -366,18 +376,16 @@ import emailjs from '@emailjs/browser';
 
 export default {
   name: 'App',
-  components: {
-    Navigation,
-  },
+  components: { Navigation },
   data() {
     return {
-      birthDate: import.meta.env.VITE_BIRTH_DATE, // Fetch birth date from .env
-      age: 0, // Initialize age
+      birthDate: import.meta.env.VITE_BIRTH_DATE,
+      age: 0,
       steam: true,
       sketchfab: false,
+      rolla: false, // new: Rolla panel state
     };
   },
-  
   methods: {
     calculateAge() {
       const birthDate = new Date(this.birthDate);
@@ -392,11 +400,21 @@ export default {
     toggleSketchFab() {
       this.steam = false;
       this.sketchfab = true;
+      this.rolla = false;
     },
     toggleSteam() {
       this.sketchfab = false;
       this.steam = true;
+      this.rolla = false;
     },
+    toggleRolla() {
+      this.rolla = !this.rolla;
+      if (this.rolla) {
+        this.steam = false;
+        this.sketchfab = false;
+      }
+    },
+
     sendEmail() {
       emailjs
         .sendForm(
@@ -579,6 +597,29 @@ input[type=text], input[type=email], textarea {
   backdrop-filter: blur(6px);
   color: var(--text);
 }
+
+/* responsive video embed used by Rolla tab */
+.video-embed { margin: 18px 0; display: flex; justify-content: center; }
+.video-wrapper {
+  width: 100%;
+  max-width: 980px;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(2,6,23,0.6);
+  border: 1px solid rgba(255,107,53,0.06);
+  background: #000;
+}
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* keep portofolio-navigation active styles consistent */
+.portofolio-navigation a[role="button"] { cursor: pointer; text-decoration: none; }
+.portofolio-navigation a.active h4 { background: linear-gradient(90deg, rgba(255,107,53,0.12), rgba(243,167,18,0.06)); border-radius: 15px; border: 1px solid rgba(255,107,53,0.14); }
 
 /* small screens: stack and reduce bubble size */
 @media (max-width: 980px) {

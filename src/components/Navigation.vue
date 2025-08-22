@@ -65,7 +65,7 @@ methods: {
   color: var(--text);
 }
 .navbar {
-    position: absolute; /* Make the navbar fixed at the top */
+    position: fixed; /* Make the navbar fixed at the top */
     top: 50px; /* Stick it to the top of the viewport */
     left: 0;
     right: 0;
