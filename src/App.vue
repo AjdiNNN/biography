@@ -381,9 +381,9 @@ export default {
     return {
       birthDate: import.meta.env.VITE_BIRTH_DATE,
       age: 0,
-      steam: true,
+      steam: false,
       sketchfab: false,
-      rolla: false, // new: Rolla panel state
+      rolla: true, // new: Rolla panel state
     };
   },
   methods: {
