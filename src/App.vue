@@ -492,7 +492,7 @@ body {
   position: relative;
   text-align: left;
   border-radius: 25px;
-  margin: 16px 24px;
+  margin: 25px 2%;
   padding: 25px 50px;
   overflow: visible;
   /* remove direct background here — inner panel is provided by ::after */
@@ -1172,6 +1172,9 @@ input[type=submit]:hover {
   opacity: 0.95;
 }
 @media (max-width: 960px) {
+  .content{
+        padding: 25px 35px;
+  }
    .portofolio-navigation {
     flex-direction: column;
     align-items: center;
