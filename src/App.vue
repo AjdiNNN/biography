@@ -1050,7 +1050,7 @@ label{
   line-height: 12px;
   color: var(--text);
   font-weight: 800;
-  background: var(--bg);
+  background: var(--content-bg);
   text-transform: uppercase;
   z-index: 2;
 }
