@@ -696,6 +696,7 @@ input[type=text], input[type=email], textarea {
 .ballon {
   position: relative;
   z-index: 2;
+  margin: 0 auto;
   width: 400px;
   height: 400px;
   flex: 0 0 auto;
@@ -1191,7 +1192,8 @@ input[type=submit]:hover {
   }
   .right-div {
   width: 100%;
-}
+  padding-top: 0;
+  }
   .language{
     grid-template-columns: none;
   }
@@ -1212,10 +1214,11 @@ input[type=submit]:hover {
     padding-bottom: 0px;
   }
   .ballon {
-    margin-left: 0;
-    margin-top: -11.48em;
-    height: 300px;
-    width: 300px;
+    margin: 0 auto;
+    font-size: .6rem;
+    margin-top: -8.4rem;
+    height: 200px;
+    width: 200px;
   }
 
 .ballon::before {
